@@ -20,7 +20,7 @@ static UIViewController *_sj_get_top_view_controller() {
 }
 
 @interface SJRouter()
-@property (nonatomic, strong, readonly) NSMutableArray<Class<SJRouteHandler>> *infosM;
+@property (nonatomic, strong, readonly) NSMutableDictionary<NSString *, Class<SJRouteHandler>> *handlersM;
 @end
 
 @implementation SJRouter
@@ -36,7 +36,7 @@ static UIViewController *_sj_get_top_view_controller() {
 - (instancetype)init {
     self = [super init];
     if ( !self ) return nil;
-    _infosM = [NSMutableArray new];
+    _handlersM = [NSMutableDictionary new];
     int count = objc_getClassList(NULL, 0);
     Class *classes = (Class *)malloc(sizeof(Class) * count); objc_getClassList(classes, count);
     Protocol *p_handler = @protocol(SJRouteHandler);
@@ -46,7 +46,7 @@ static UIViewController *_sj_get_top_view_controller() {
             if ( !class_conformsToProtocol(thisCls, p_handler) ) continue;
             if ( ![(id)thisCls respondsToSelector:@selector(routePath)] ) continue;
             if ( ![(id)thisCls respondsToSelector:@selector(handleRequestWithParameters:topViewController:completionHandler:)] ) continue;
-            [_infosM addObject:thisCls];
+            _handlersM[[(id<SJRouteHandler>)thisCls routePath]] = thisCls;
             break;
         }
     }
@@ -55,13 +55,13 @@ static UIViewController *_sj_get_top_view_controller() {
 
 - (void)handleRequest:(SJRouteRequest *)request completionHandler:(SJCompletionHandler)completionHandler {
     NSParameterAssert(request); if ( !request ) return;
-    for ( Class<SJRouteHandler> handler in _infosM ) {
-        if ( ![[handler routePath] isEqualToString:request.requestPath] ) continue;
+    Class<SJRouteHandler> handler = _handlersM[request.requestPath];
+    if ( handler ) {
         [handler handleRequestWithParameters:request.requestPath topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
-        return;
     }
-    
-    printf("\n (-_-) Unhandled request: %s", request.description.UTF8String);
+    else {
+        printf("\n (-_-) Unhandled request: %s", request.description.UTF8String);
+    }
 }
 @end
 NS_ASSUME_NONNULL_END

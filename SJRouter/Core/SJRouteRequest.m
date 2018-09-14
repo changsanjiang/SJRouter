@@ -22,11 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
     return [self initWithPath:URL.path parameters:parameters];
 }
 
-- (instancetype)initWithPath:(NSString *)rp parameters:(nullable SJParameters)prts {
+- (instancetype)initWithPath:(NSString *)rq parameters:(nullable SJParameters)prts {
+    NSParameterAssert(rq);
     self = [super init];
     if ( !self ) return nil;
-    while ( [rp hasPrefix:@"/"] ) rp = [rp substringFromIndex:1];
-    _requestPath = rp.copy;
+    while ( [rq hasPrefix:@"/"] ) rq = [rq substringFromIndex:1];
+    _requestPath = rq.copy?:@"";
     _prts = prts;
     return self;
 }
