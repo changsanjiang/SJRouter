@@ -35,9 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
     return
     [NSString stringWithFormat:@"[%@<%p>] {\n \
      requestPath = %@; \n \
-     displayType = %ld; \n \
      parameters = %@; \n \
-     }", NSStringFromClass([self class]), self, _requestPath, (long)_displayType, _prts];
+     }", NSStringFromClass([self class]), self, _requestPath, _prts];
 }
 @end
 NS_ASSUME_NONNULL_END

@@ -19,31 +19,8 @@ static UIViewController *_sj_get_top_view_controller() {
     return vc;
 }
 
-@interface _SJRouteHandlerClassInfo: NSObject
-- (instancetype)initWithClass:(Class<SJRouteHandler>)class;
-@property (nonatomic, strong, readonly) Class thisClass;
-@property (nonatomic, strong, readonly, nullable) NSString *routePath;
-@end
-
-@implementation _SJRouteHandlerClassInfo
-- (instancetype)initWithClass:(Class<SJRouteHandler>)class {
-    self = [super init];
-    if ( !self ) return nil;
-    _thisClass = class;
-    return self;
-}
-- (nullable NSString *)routePath {
-    if ( [(id)_thisClass respondsToSelector:@selector(routePath)] ) return [_thisClass routePath];
-    return nil;
-}
-- (nullable id)createInstance:(nullable SJParameters)parameters completionHandler:(nullable SJCompletionHandler)completionHandler {
-    if ( [(id)_thisClass respondsToSelector:@selector(instanceWithParameters:completionHandler:)] ) return [_thisClass instanceWithParameters:parameters completionHandler:completionHandler];
-    return nil;
-}
-@end
-
 @interface SJRouter()
-@property (nonatomic, strong, readonly) NSMutableArray<_SJRouteHandlerClassInfo *> *infosM;
+@property (nonatomic, strong, readonly) NSMutableArray<Class<SJRouteHandler>> *infosM;
 @end
 
 @implementation SJRouter
@@ -67,29 +44,20 @@ static UIViewController *_sj_get_top_view_controller() {
         Class cls = classes[i];
         for ( Class thisCls = cls ; nil != thisCls ; thisCls = class_getSuperclass(thisCls) ) {
             if ( !class_conformsToProtocol(thisCls, p_handler) ) continue;
-            [_infosM addObject:[[_SJRouteHandlerClassInfo alloc] initWithClass:thisCls]];
+            if ( ![(id)thisCls respondsToSelector:@selector(routePath)] ) continue;
+            if ( ![(id)thisCls respondsToSelector:@selector(handleRequestWithParameters:topViewController:completionHandler:)] ) continue;
+            [_infosM addObject:thisCls];
             break;
         }
     }
     return self;
 }
 
-- (void)handleRequest:(SJRouteRequest *)request {
+- (void)handleRequest:(SJRouteRequest *)request completionHandler:(SJCompletionHandler)completionHandler {
     NSParameterAssert(request); if ( !request ) return;
-    for ( _SJRouteHandlerClassInfo *info in _infosM ) {
-        if ( ![info.routePath isEqualToString:request.requestPath] ) continue;
-        UIViewController *instance = [info createInstance:request.prts completionHandler:request.completionHandler];
-        NSParameterAssert(instance); if ( !instance ) break;
-        switch ( request.displayType ) {
-            case SJViewControllerDisplayTypePush: {
-                [_sj_get_top_view_controller().navigationController pushViewController:instance animated:YES];
-            }
-                break;
-            case SJViewControllerDisplayTypePresent: {
-                [_sj_get_top_view_controller() presentViewController:instance animated:YES completion:nil];
-            }
-                break;
-        }
+    for ( Class<SJRouteHandler> handler in _infosM ) {
+        if ( ![[handler routePath] isEqualToString:request.requestPath] ) continue;
+        [handler handleRequestWithParameters:request.requestPath topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
         return;
     }
     

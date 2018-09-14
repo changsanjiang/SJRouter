@@ -21,14 +21,20 @@
 
 - (IBAction)push:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/push" parameters:@{@"dfsd":@(23432)}];
-    request.displayType = SJViewControllerDisplayTypePush;
-    [SJRouter.shared handleRequest:request];
+    [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
+#ifdef DEBUG
+        NSLog(@"%d - %s", (int)__LINE__, __func__);
+#endif
+    }];
 }
 
 - (IBAction)present:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/present" parameters:@{@"dfsd":@(23432)}];
-    request.displayType = SJViewControllerDisplayTypePresent;
-    [SJRouter.shared handleRequest:request];
+    [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
+#ifdef DEBUG
+        NSLog(@"%d - %s", (int)__LINE__, __func__);
+#endif
+    }];
 }
 
 @end

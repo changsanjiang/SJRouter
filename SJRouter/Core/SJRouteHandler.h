@@ -14,14 +14,9 @@ typedef id SJParameters;
 
 typedef void(^SJCompletionHandler)(id _Nullable result, NSError *_Nullable error);
 
-typedef enum : NSUInteger {
-    SJViewControllerDisplayTypePush,
-    SJViewControllerDisplayTypePresent,
-} SJViewControllerDisplayType;
-
 @protocol SJRouteHandler
 + (NSString *)routePath;
-+ (UIViewController *)instanceWithParameters:(nullable SJParameters)parameters completionHandler:(nullable SJCompletionHandler)completionHandler;
++ (void)handleRequestWithParameters:(nullable SJParameters)parameters topViewController:(UIViewController *)topViewController completionHandler:(nullable SJCompletionHandler)completionHandler;
 @end
 NS_ASSUME_NONNULL_END
 

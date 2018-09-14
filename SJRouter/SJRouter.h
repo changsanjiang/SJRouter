@@ -17,6 +17,6 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface SJRouter : NSObject
 + (instancetype)shared;
-- (void)handleRequest:(SJRouteRequest *)request;
+- (void)handleRequest:(SJRouteRequest *)request completionHandler:(SJCompletionHandler)completionHandler;
 @end
 NS_ASSUME_NONNULL_END

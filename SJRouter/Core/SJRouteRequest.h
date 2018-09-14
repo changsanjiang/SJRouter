@@ -14,8 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPath:(NSString *)requestPath parameters:(nullable SJParameters)parameters;
 @property (nonatomic, strong, readonly) NSString *requestPath;
 @property (nonatomic, strong, readonly, nullable) SJParameters prts;
-@property (nonatomic, copy, nullable) SJCompletionHandler completionHandler;
-@property (nonatomic) SJViewControllerDisplayType displayType;
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new  NS_UNAVAILABLE;
 @end

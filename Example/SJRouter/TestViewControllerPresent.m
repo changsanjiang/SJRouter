@@ -8,6 +8,7 @@
 
 #import "TestViewControllerPresent.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface TestViewControllerPresent ()
 @property (nonatomic, copy, nullable) SJCompletionHandler completionHandler;
 @end
@@ -18,18 +19,21 @@
     return @"test/vc/present";
 }
 
-+ (UIViewController *)instanceWithParameters:(nullable SJParameters)parameters completionHandler:(nullable SJCompletionHandler)completionHandler {
-    TestViewControllerPresent *vc = [TestViewControllerPresent new];
++ (void)handleRequestWithParameters:(nullable SJParameters)parameters topViewController:(UIViewController *)topViewController completionHandler:(nullable SJCompletionHandler)completionHandler {
+    TestViewControllerPresent *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"present"];
     vc.completionHandler = completionHandler;
-    return vc;
+    [topViewController presentViewController:vc animated:YES completion:nil];
 }
+
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    if ( self.completionHandler ) self.completionHandler(nil, nil);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.redColor;
     // Do any additional setup after loading the view.
 }
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 @end
+NS_ASSUME_NONNULL_END

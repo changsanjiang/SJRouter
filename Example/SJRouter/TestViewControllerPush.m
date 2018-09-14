@@ -19,10 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
     return @"test/vc/push";
 }
 
-+ (UIViewController *)instanceWithParameters:(nullable SJParameters)parameters completionHandler:(nullable SJCompletionHandler)completionHandler {
-    TestViewControllerPush *vc = [TestViewControllerPush new];
++ (void)handleRequestWithParameters:(nullable SJParameters)parameters topViewController:(UIViewController *)topViewController completionHandler:(nullable  SJCompletionHandler)completionHandler {
+    TestViewControllerPush *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"push"];
     vc.completionHandler = completionHandler;
-    return vc;
+    [topViewController.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+    if ( self.completionHandler ) self.completionHandler(nil, nil);
 }
 
 - (void)viewDidLoad {
