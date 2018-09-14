@@ -7,6 +7,7 @@
 //
 
 #import "SJViewController.h"
+@import SJRouter;
 
 @interface SJViewController ()
 
@@ -14,16 +15,20 @@
 
 @implementation SJViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)push:(id)sender {
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/push" parameters:@{@"dfsd":@(23432)}];
+    request.displayType = SJViewControllerDisplayTypePush;
+    [SJRouter.shared handleRequest:request];
+}
+
+- (IBAction)present:(id)sender {
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/present" parameters:@{@"dfsd":@(23432)}];
+    request.displayType = SJViewControllerDisplayTypePresent;
+    [SJRouter.shared handleRequest:request];
 }
 
 @end

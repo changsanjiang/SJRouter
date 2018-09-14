@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A343DA91BEAEB8A9DEBB6B0D /* Pods_SJRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */; };
+		A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */; };
+		A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +61,18 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7ECA710100F9C8D2C28782D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7ECA710100F9C8D2C28782D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5CE6E238AD76D1FD93CDB6A /* Pods-SJRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		ABA454D041C8C361A1FB9BC6 /* SJRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SJRouter.podspec; path = ../SJRouter.podspec; sourceTree = "<group>"; };
+		A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewControllerPush.h; sourceTree = "<group>"; };
+		A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerPush.m; sourceTree = "<group>"; };
+		A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewControllerPresent.h; sourceTree = "<group>"; };
+		A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerPresent.m; sourceTree = "<group>"; };
+		ABA454D041C8C361A1FB9BC6 /* SJRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SJRouter.podspec; path = ../SJRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFDEB688BFCD80AC5011DD0D /* Pods-SJRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DF8C6BA3A89D8F88A4949120 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DF8C6BA3A89D8F88A4949120 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SJViewController.h */,
 				6003F5A6195388D20070C39A /* SJViewController.m */,
+				A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */,
+				A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */,
+				A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */,
+				A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -376,6 +386,8 @@
 			files = (
 				6003F59E195388D20070C39A /* SJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SJViewController.m in Sources */,
+				A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */,
+				A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
