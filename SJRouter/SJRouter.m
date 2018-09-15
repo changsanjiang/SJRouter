@@ -50,6 +50,7 @@ static UIViewController *_sj_get_top_view_controller() {
             break;
         }
     }
+    if ( classes ) free(classes);
     return self;
 }
 
