@@ -6,13 +6,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/SJRouter.svg?style=flat)](https://cocoapods.org/pods/SJRouter)
 
 ## 中文介绍
+
 https://www.jianshu.com/p/13c42f4e9af1
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -28,9 +27,9 @@ pod 'SJRouter'
 SanJiang, changsanjiang@gmail.com
 
 ## Contact
+
 * Email: changsanjiang@gmail.com
-* QQGroup: 719616775 
-<img src="https://github.com/changsanjiang/SJVideoPlayer/blob/master/SJVideoPlayerProject/SJVideoPlayerProject/Group.jpeg" width="100"  />
+* QQGroup: 719616775 <img src="https://github.com/changsanjiang/SJVideoPlayer/blob/master/SJVideoPlayerProject/SJVideoPlayerProject/Group.jpeg" width="100"  />
 
 ## License
 

@@ -54,11 +54,11 @@ static UIViewController *_sj_get_top_view_controller() {
     return self;
 }
 
-- (void)handleRequest:(SJRouteRequest *)request completionHandler:(SJCompletionHandler)completionHandler {
+- (void)handleRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler {
     NSParameterAssert(request); if ( !request ) return;
     Class<SJRouteHandler> handler = _handlersM[request.requestPath];
     if ( handler ) {
-        [handler handleRequestWithParameters:request.requestPath topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
+        [handler handleRequestWithParameters:request.prts topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
     }
     else {
         printf("\n (-_-) Unhandled request: %s", request.description.UTF8String);
