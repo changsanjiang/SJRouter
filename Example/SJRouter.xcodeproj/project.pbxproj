@@ -258,6 +258,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "changsanjiang@gmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = DB5B5F2RH5;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -516,12 +520,16 @@
 			baseConfigurationReference = AFDEB688BFCD80AC5011DD0D /* Pods-SJRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DB5B5F2RH5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SJRouter/SJRouter-Prefix.pch";
 				INFOPLIST_FILE = "SJRouter/SJRouter-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ae73dc69-dfb3-498f-914b-b86d97fd9950";
+				PROVISIONING_PROFILE_SPECIFIER = SanJiangDevelopment;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -531,12 +539,15 @@
 			baseConfigurationReference = 82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SJRouter/SJRouter-Prefix.pch";
 				INFOPLIST_FILE = "SJRouter/SJRouter-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
