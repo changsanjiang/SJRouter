@@ -37,18 +37,25 @@ static UIViewController *_sj_get_top_view_controller() {
     self = [super init];
     if ( !self ) return nil;
     _handlersM = [NSMutableDictionary new];
-    int count = objc_getClassList(NULL, 0);
-    Class *classes = (Class *)malloc(sizeof(Class) * count); objc_getClassList(classes, count);
-    Protocol *p_handler = @protocol(SJRouteHandler);
-    for ( int i = 0 ; i < count ; ++ i ) {
-        Class cls = classes[i];
-        for ( Class thisCls = cls ; nil != thisCls ; thisCls = class_getSuperclass(thisCls) ) {
-            if ( !class_conformsToProtocol(thisCls, p_handler) ) continue;
-            if ( ![(id)thisCls respondsToSelector:@selector(routePath)] ) continue;
-            if ( ![(id)thisCls respondsToSelector:@selector(handleRequestWithParameters:topViewController:completionHandler:)] ) continue;
-            _handlersM[[(id<SJRouteHandler>)thisCls routePath]] = thisCls;
-            break;
-        }
+    unsigned int classNamesCount = 0;
+    //用 executablePath 获取当前 app image
+    NSString *appImage = [NSBundle mainBundle].executablePath;
+    //objc_copyClassNamesForImage 获取到的是 image 下的类，直接排除了系统的类
+    const char **classes = objc_copyClassNamesForImage([appImage UTF8String], &classNamesCount);
+    NSMutableArray *classNameStrings = [NSMutableArray array];
+    for (unsigned int i = 0; i < classNamesCount; i++) {
+        const char *className = classes[i];
+        NSString *classNameString = [NSString stringWithUTF8String:className];
+        [classNameStrings addObject:classNameString];
+    }
+    NSArray *allClassNames = [classNameStrings sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    
+    for ( int i = 0; i < allClassNames.count; i++) {
+        Class cls = NSClassFromString(allClassNames[i]);
+        if ( !class_conformsToProtocol(cls, p_handler) ) continue;
+        if ( ![(id)cls respondsToSelector:@selector(routePath)] ) continue;
+        if ( ![(id)cls respondsToSelector:@selector(handleRequestWithParameters:topViewController:completionHandler:)] ) continue;
+        _handlersM[[(id<SJRouteHandler>)cls routePath]] = cls;
     }
     if ( classes ) free(classes);
     return self;
