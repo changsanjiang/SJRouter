@@ -37,22 +37,20 @@ static UIViewController *_sj_get_top_view_controller() {
     self = [super init];
     if ( !self ) return nil;
     _handlersM = [NSMutableDictionary new];
-    unsigned int classNamesCount = 0;
-    //用 executablePath 获取当前 app image
-    NSString *appImage = [NSBundle mainBundle].executablePath;
-    //objc_copyClassNamesForImage 获取到的是 image 下的类，直接排除了系统的类
-    const char **classes = objc_copyClassNamesForImage([appImage UTF8String], &classNamesCount);
-    NSMutableArray *classNameStrings = [NSMutableArray array];
-    for (unsigned int i = 0; i < classNamesCount; i++) {
-        const char *className = classes[i];
-        NSString *classNameString = [NSString stringWithUTF8String:className];
-        [classNameStrings addObject:classNameString];
-    }
-    NSArray *allClassNames = [classNameStrings sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
-    for ( int i = 0; i < allClassNames.count; i++) {
-        Class cls = NSClassFromString(allClassNames[i]);
-        if ( !class_conformsToProtocol(cls, p_handler) ) continue;
+    /// Thanks @yehot, @Potato121
+    /// https://www.jianshu.com/p/534eccb63974
+    /// https://github.com/changsanjiang/SJRouter/pull/1
+    
+    unsigned int cls_count = 0;
+    NSString *app_img = [NSBundle mainBundle].executablePath;
+    const char **classes = objc_copyClassNamesForImage([app_img UTF8String], &cls_count);
+    Protocol *p_handler = @protocol(SJRouteHandler);
+    for ( unsigned int i = 0 ; i < cls_count ; ++ i ) {
+        const char *cls_name = classes[i];
+        NSString *cls_str = [NSString stringWithUTF8String:cls_name];
+        Class cls = NSClassFromString(cls_str);
+        if ( ![cls conformsToProtocol:p_handler] ) continue;
         if ( ![(id)cls respondsToSelector:@selector(routePath)] ) continue;
         if ( ![(id)cls respondsToSelector:@selector(handleRequestWithParameters:topViewController:completionHandler:)] ) continue;
         _handlersM[[(id<SJRouteHandler>)cls routePath]] = cls;
