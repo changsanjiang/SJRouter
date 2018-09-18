@@ -16,5 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly, nullable) SJParameters prts;
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new  NS_UNAVAILABLE;
+
+@property (nonatomic, strong, readonly, nullable) NSURL *originalURL;
 @end
 NS_ASSUME_NONNULL_END

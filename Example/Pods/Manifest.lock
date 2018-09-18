@@ -1,29 +1,18 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - SJRouter (0.1.0):
-    - SJRouter/Core (= 0.1.0)
-  - SJRouter/Core (0.1.0)
+  - SJRouter (0.0.5):
+    - SJRouter/Core (= 0.0.5)
+  - SJRouter/Core (0.0.5)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - SJRouter (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SJRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SJRouter: 35e0b704006efc7650fb51179777e1dbd52e0354
+  SJRouter: 9f62588b977cb10f75e9a9abceadb40d6c36961c
 
-PODFILE CHECKSUM: e1c78ad2f4beb089b689de5b070c46685dec4c54
+PODFILE CHECKSUM: f7ee1a385522b2bc82b5034fa43f3188f6aec26d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1

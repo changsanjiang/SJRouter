@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		775729212150D58200186126 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775729202150D58200186126 /* WebTestViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A343DA91BEAEB8A9DEBB6B0D /* Pods_SJRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */; };
 		A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */; };
@@ -61,6 +62,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7757291F2150D58200186126 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
+		775729202150D58200186126 /* WebTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTestViewController.m; sourceTree = "<group>"; };
 		7ECA710100F9C8D2C28782D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */,
 				A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */,
 				A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */,
+				7757291F2150D58200186126 /* WebTestViewController.h */,
+				775729202150D58200186126 /* WebTestViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -236,7 +241,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				929B10C80A05477189D410E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,31 +349,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		929B10C80A05477189D410E2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D62A7E2CA123AE7CF4286DB8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SJRouter/SJRouter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -378,7 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,6 +377,7 @@
 				6003F59E195388D20070C39A /* SJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SJViewController.m in Sources */,
 				A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */,
+				775729212150D58200186126 /* WebTestViewController.m in Sources */,
 				A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

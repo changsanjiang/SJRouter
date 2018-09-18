@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Uf-tN-bh9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Uf-tN-bh9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,7 +79,7 @@
                                                 <rect key="frame" x="191.5" y="0.0" width="87.5" height="100"/>
                                                 <state key="normal" image="avatar"/>
                                                 <connections>
-                                                    <action selector="present:" destination="whP-gf-Uak" eventType="touchUpInside" id="7JH-KB-qd8"/>
+                                                    <action selector="unhandled:" destination="whP-gf-Uak" eventType="touchUpInside" id="W11-U1-9GC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -165,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM2-MS-zAQ">
-                                <rect key="frame" x="170.5" y="318" width="34" height="30"/>
+                                <rect key="frame" x="170.5" y="318.5" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="back:" destination="dDr-sS-LXt" eventType="touchUpInside" id="6Jm-Vo-Atf"/>
@@ -200,6 +199,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdh-ev-RgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+        <!--Test Web View Controller-->
+        <scene sceneID="LLx-mJ-kUY">
+            <objects>
+                <viewController storyboardIdentifier="web" id="7nI-rP-D5V" customClass="TestWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBm-9w-vmR"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbr-UE-JDb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Bz-qj-Uk1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ik6-FG-Ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3615" y="430"/>
         </scene>
     </scenes>
     <resources>

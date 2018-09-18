@@ -7,6 +7,7 @@
 //
 
 #import "SJViewController.h"
+#import "WebTestViewController.h"
 @import SJRouter;
 
 @interface SJViewController ()
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self test];
 }
 
 - (IBAction)push:(id)sender {
@@ -37,4 +39,23 @@
     }];
 }
 
+- (IBAction)unhandled:(id)sender {
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    [SJRouter.shared handleRequest:request completionHandler:nil];
+}
+
+- (void)test {
+    /// router无法处理某个请求时的回调
+    SJRouter.shared.unhandledCallback = ^(SJRouteRequest * _Nonnull request, UIViewController * _Nonnull topViewController) {
+        /// 尝试用网页打开
+        if ( request.originalURL ) {
+            WebTestViewController *vc = [[WebTestViewController alloc] initWithURL:request.originalURL];
+            [topViewController.navigationController pushViewController:vc animated:YES];
+            printf("\n尝试通过网页打开, Router未能处理这个请求: %s.", request.description.UTF8String);
+        }
+        else {
+            NSLog(@"无法处理的请求: %@", request);
+        }
+    };
+}
 @end

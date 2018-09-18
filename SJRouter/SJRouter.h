@@ -13,11 +13,16 @@
 
 #import <Foundation/Foundation.h>
 #import "SJRouteRequest.h"
+@class UIViewController;
 
 NS_ASSUME_NONNULL_BEGIN
+typedef void(^SJRouterUnhandledCallback)(SJRouteRequest *request, UIViewController *topViewController); // 无法处理某个请求时的回调
+
 @interface SJRouter : NSObject
 + (instancetype)shared;
 
 - (void)handleRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler;
+
+@property (nonatomic, copy, nullable) SJRouterUnhandledCallback unhandledCallback;
 @end
 NS_ASSUME_NONNULL_END

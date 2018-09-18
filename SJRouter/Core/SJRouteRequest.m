@@ -19,7 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
         }
         parameters = m.copy;
     }
-    return [self initWithPath:URL.path parameters:parameters];
+    self = [self initWithPath:URL.path parameters:parameters];
+    if ( !self ) return nil;
+    _originalURL = URL;
+    return self;
 }
 
 - (instancetype)initWithPath:(NSString *)rq parameters:(nullable SJParameters)prts {
@@ -37,7 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
     [NSString stringWithFormat:@"[%@<%p>] {\n \
      requestPath = %@; \n \
      parameters = %@; \n \
-     }", NSStringFromClass([self class]), self, _requestPath, _prts];
+     originalURL = %@; \n \
+}", NSStringFromClass([self class]), self, _requestPath, _prts, _originalURL];
 }
 @end
 NS_ASSUME_NONNULL_END

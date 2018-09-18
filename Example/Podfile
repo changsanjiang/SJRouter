@@ -6,6 +6,6 @@ target 'SJRouter_Example' do
   target 'SJRouter_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+    #pod 'FBSnapshotTestCase'
   end
 end

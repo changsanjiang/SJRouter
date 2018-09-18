@@ -62,6 +62,7 @@ static UIViewController *_sj_get_top_view_controller() {
     }
     else {
         printf("\n (-_-) Unhandled request: %s", request.description.UTF8String);
+        if ( _unhandledCallback ) _unhandledCallback(request, _sj_get_top_view_controller());
     }
 }
 @end
