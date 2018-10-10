@@ -76,5 +76,9 @@ static UIViewController *_sj_get_top_view_controller() {
         if ( _unhandledCallback ) _unhandledCallback(request, _sj_get_top_view_controller());
     }
 }
+- (BOOL)canHandleRoutePath:(NSString *)routePath {
+    if ( 0 == routePath.length ) return NO;
+    return _handlersM[routePath];
+}
 @end
 NS_ASSUME_NONNULL_END
