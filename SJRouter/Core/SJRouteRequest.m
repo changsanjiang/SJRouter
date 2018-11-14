@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
      requestPath = %@; \n \
      parameters = %@; \n \
      originalURL = %@; \n \
-     }", NSStringFromClass([self class]), self, _requestPath, _prts, self.originalURL];
+     }", NSStringFromClass([self class]), self, _requestPath, _prts, _originalURL];
 }
 @end
 NS_ASSUME_NONNULL_END
