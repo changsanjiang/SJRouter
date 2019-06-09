@@ -10,7 +10,7 @@
 @import SJRouter;
 
 NS_ASSUME_NONNULL_BEGIN
-@interface WebTestViewController : UIViewController<SJRouteHandler>
+@interface WebTestViewController : UIViewController
 - (instancetype)initWithURL:(NSURL *)URL;
 @property (nonatomic, strong, readonly) NSURL *URL;
 @end

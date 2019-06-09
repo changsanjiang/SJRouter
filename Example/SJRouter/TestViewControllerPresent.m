@@ -10,24 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface TestViewControllerPresent ()
-@property (nonatomic, copy, nullable) SJCompletionHandler completionHandler;
 @end
 
 @implementation TestViewControllerPresent
-
-+ (NSString *)routePath {
-    return @"test/vc/present";
-}
-
-+ (void)handleRequestWithParameters:(nullable SJParameters)parameters topViewController:(UIViewController *)topViewController completionHandler:(nullable SJCompletionHandler)completionHandler {
-    TestViewControllerPresent *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"present"];
-    vc.completionHandler = completionHandler;
-    [topViewController presentViewController:vc animated:YES completion:nil];
-}
-
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
-    if ( self.completionHandler ) self.completionHandler(nil, nil);
 }
 
 - (void)viewDidLoad {

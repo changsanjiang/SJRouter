@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		775729212150D58200186126 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775729202150D58200186126 /* WebTestViewController.m */; };
+		77EE790522ACCD610052CAEE /* SJDemoRouteHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A343DA91BEAEB8A9DEBB6B0D /* Pods_SJRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */; };
 		A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */; };
@@ -64,6 +65,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7757291F2150D58200186126 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
 		775729202150D58200186126 /* WebTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTestViewController.m; sourceTree = "<group>"; };
+		77EE790322ACCD610052CAEE /* SJDemoRouteHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJDemoRouteHandlers.h; sourceTree = "<group>"; };
+		77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJDemoRouteHandlers.m; sourceTree = "<group>"; };
 		7ECA710100F9C8D2C28782D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,12 +149,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SJViewController.h */,
 				6003F5A6195388D20070C39A /* SJViewController.m */,
-				A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */,
-				A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */,
-				A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */,
-				A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */,
 				7757291F2150D58200186126 /* WebTestViewController.h */,
 				775729202150D58200186126 /* WebTestViewController.m */,
+				77EE790222ACCC3C0052CAEE /* ViewControllers */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -198,6 +198,19 @@
 				DF8C6BA3A89D8F88A4949120 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		77EE790222ACCC3C0052CAEE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77EE790322ACCD610052CAEE /* SJDemoRouteHandlers.h */,
+				77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */,
+				A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */,
+				A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */,
+				A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */,
+				A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8C01FA579DE0191F7F14B9E0 /* Pods */ = {
@@ -263,7 +276,7 @@
 				ORGANIZATIONNAME = "changsanjiang@gmail.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = DB5B5F2RH5;
+						DevelopmentTeam = U5A7L7SMNP;
 						ProvisioningStyle = Manual;
 					};
 					6003F5AD195388D20070C39A = {
@@ -276,6 +289,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -376,6 +390,7 @@
 			files = (
 				6003F59E195388D20070C39A /* SJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SJViewController.m in Sources */,
+				77EE790522ACCD610052CAEE /* SJDemoRouteHandlers.m in Sources */,
 				A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */,
 				775729212150D58200186126 /* WebTestViewController.m in Sources */,
 				A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */,
@@ -508,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DB5B5F2RH5;
+				DEVELOPMENT_TEAM = U5A7L7SMNP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SJRouter/SJRouter-Prefix.pch";
 				INFOPLIST_FILE = "SJRouter/SJRouter-Info.plist";
@@ -516,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ae73dc69-dfb3-498f-914b-b86d97fd9950";
-				PROVISIONING_PROFILE_SPECIFIER = SanJiangDevelopment;
+				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

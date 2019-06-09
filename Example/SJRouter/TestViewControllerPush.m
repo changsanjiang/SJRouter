@@ -10,31 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface TestViewControllerPush ()
-@property (nonatomic, copy, nullable) SJCompletionHandler completionHandler;
 @end
 
 @implementation TestViewControllerPush
 
-// 对应单个路径, 可以用这个方法返回
-//+ (NSString *)routePath {
-//    return @"test/vc/push";
-//}
-
-// 对应多个路径, 可以用这个方法返回
-+ (NSArray<NSString *> *)multiRoutePath {
-    return
-    @[@"test/vc/push"];
-}
-
-+ (void)handleRequestWithParameters:(nullable SJParameters)parameters topViewController:(UIViewController *)topViewController completionHandler:(nullable  SJCompletionHandler)completionHandler {
-    TestViewControllerPush *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"push"];
-    vc.completionHandler = completionHandler;
-    [topViewController.navigationController pushViewController:vc animated:YES];
-}
-
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
-    if ( self.completionHandler ) self.completionHandler(nil, nil);
 }
 
 - (void)viewDidLoad {

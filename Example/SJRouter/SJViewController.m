@@ -18,9 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test];
+    [self _configRouter];
 }
 
+// 测试跳转
 - (IBAction)push:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/push" parameters:@{@"dfsd":@(23432)}];
     [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
@@ -30,6 +31,7 @@
     }];
 }
 
+// 测试modal
 - (IBAction)present:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/present" parameters:@{@"dfsd":@(23432)}];
     [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
@@ -39,14 +41,20 @@
     }];
 }
 
+// 测试无法处理时的回调
 - (IBAction)unhandled:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 
-- (void)test {
+#pragma mark -
+
+- (void)_configRouter {
     /// router无法处理某个请求时的回调
     SJRouter.shared.unhandledCallback = ^(SJRouteRequest * _Nonnull request, UIViewController * _Nonnull topViewController) {
+#ifdef DEBUG
+        NSLog(@"%d - %s", (int)__LINE__, __func__);
+#endif
         /// 尝试用网页打开
         if ( request.originalURL ) {
             WebTestViewController *vc = [[WebTestViewController alloc] initWithURL:request.originalURL];

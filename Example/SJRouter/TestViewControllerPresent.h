@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@import SJRouter;
 
 NS_ASSUME_NONNULL_BEGIN
-@interface TestViewControllerPresent : UIViewController<SJRouteHandler>
+@interface TestViewControllerPresent : UIViewController
 
 @end
 NS_ASSUME_NONNULL_END

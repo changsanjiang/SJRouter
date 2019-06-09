@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Uf-tN-bh9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Uf-tN-bh9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,9 +36,6 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="push:" destination="whP-gf-Uak" eventType="touchUpInside" id="X5J-P8-mBI"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咸鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ave-0U-Duv">
                                         <rect key="frame" x="50" y="12" width="29" height="17"/>
@@ -65,21 +62,21 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="100"/>
                                                 <state key="normal" image="avatar"/>
                                                 <connections>
-                                                    <action selector="present:" destination="whP-gf-Uak" eventType="touchUpInside" id="ogA-qd-zRK"/>
+                                                    <action selector="push:" destination="whP-gf-Uak" eventType="touchUpInside" id="7h1-ot-DFr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdG-ZY-rGW">
                                                 <rect key="frame" x="95.5" y="0.0" width="88" height="100"/>
                                                 <state key="normal" image="avatar"/>
                                                 <connections>
-                                                    <action selector="present:" destination="whP-gf-Uak" eventType="touchUpInside" id="DoG-f2-jKK"/>
+                                                    <action selector="present:" destination="whP-gf-Uak" eventType="touchUpInside" id="29K-qB-qqY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-Hj-KA4">
                                                 <rect key="frame" x="191.5" y="0.0" width="87.5" height="100"/>
                                                 <state key="normal" image="avatar"/>
                                                 <connections>
-                                                    <action selector="unhandled:" destination="whP-gf-Uak" eventType="touchUpInside" id="W11-U1-9GC"/>
+                                                    <action selector="unhandled:" destination="whP-gf-Uak" eventType="touchUpInside" id="Avu-d0-S2n"/>
                                                 </connections>
                                             </button>
                                         </subviews>
