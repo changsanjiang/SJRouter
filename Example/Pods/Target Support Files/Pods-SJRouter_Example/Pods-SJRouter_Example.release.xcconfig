@@ -1,8 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SJRouter"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SJRouter/SJRouter.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "SJRouter"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ModuleA" "${PODS_ROOT}/Headers/Public/ModuleB" "${PODS_ROOT}/Headers/Public/SJRouter"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ModuleA" "${PODS_CONFIGURATION_BUILD_DIR}/ModuleB" "${PODS_CONFIGURATION_BUILD_DIR}/SJRouter"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ModuleA" -l"ModuleB" -l"SJRouter"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

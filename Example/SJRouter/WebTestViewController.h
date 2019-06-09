@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-@import SJRouter;
 
 NS_ASSUME_NONNULL_BEGIN
 @interface WebTestViewController : UIViewController

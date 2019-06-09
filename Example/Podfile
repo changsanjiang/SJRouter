@@ -1,11 +1,6 @@
-use_frameworks!
 
 target 'SJRouter_Example' do
   pod 'SJRouter', :path => '../'
-
-  target 'SJRouter_Tests' do
-    inherit! :search_paths
-
-    #pod 'FBSnapshotTestCase'
-  end
+  pod 'ModuleA', :path => '../ModuleA'
+  pod 'ModuleB', :path => '../ModuleB'
 end

@@ -8,7 +8,7 @@
 
 #import "SJViewController.h"
 #import "WebTestViewController.h"
-@import SJRouter;
+#import <SJRouter/SJRouter.h>
 
 @interface SJViewController ()
 
@@ -21,28 +21,17 @@
     [self _configRouter];
 }
 
-// 测试跳转
-- (IBAction)push:(id)sender {
-    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/push" parameters:@{@"dfsd":@(23432)}];
-    [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
-#ifdef DEBUG
-        NSLog(@"%d - %s", (int)__LINE__, __func__);
-#endif
-    }];
+- (IBAction)ma:(id)sender {
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MAModule/A1" parameters:nil];
+    [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 
-// 测试modal
-- (IBAction)present:(id)sender {
-    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"test/vc/present" parameters:@{@"dfsd":@(23432)}];
-    [SJRouter.shared handleRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
-#ifdef DEBUG
-        NSLog(@"%d - %s", (int)__LINE__, __func__);
-#endif
-    }];
+- (IBAction)mb:(id)sender {
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MBModule/B1" parameters:nil];
+    [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 
-// 测试无法处理时的回调
-- (IBAction)unhandled:(id)sender {
+- (IBAction)un:(id)sender {
     SJRouteRequest *request = [[SJRouteRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     [SJRouter.shared handleRequest:request completionHandler:nil];
 }

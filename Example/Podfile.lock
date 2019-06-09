@@ -1,18 +1,30 @@
 PODS:
-  - SJRouter (0.0.5):
-    - SJRouter/Core (= 0.0.5)
-  - SJRouter/Core (0.0.5)
+  - ModuleA (0.1.0):
+    - SJRouter
+  - ModuleB (0.1.0):
+    - SJRouter
+  - SJRouter (0.0.12):
+    - SJRouter/Core (= 0.0.12)
+  - SJRouter/Core (0.0.12)
 
 DEPENDENCIES:
+  - ModuleA (from `../ModuleA`)
+  - ModuleB (from `../ModuleB`)
   - SJRouter (from `../`)
 
 EXTERNAL SOURCES:
+  ModuleA:
+    :path: "../ModuleA"
+  ModuleB:
+    :path: "../ModuleB"
   SJRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SJRouter: 9f62588b977cb10f75e9a9abceadb40d6c36961c
+  ModuleA: 45d7ec62f61a891a7691b29228233da19fa4dd69
+  ModuleB: 7d0e51b2b77dbcb06f8b6639b2c9d6c78ec7bc04
+  SJRouter: 702a0d06811fc2da02d6145bc7abb9f633fdc612
 
-PODFILE CHECKSUM: f7ee1a385522b2bc82b5034fa43f3188f6aec26d
+PODFILE CHECKSUM: 594842781561fbe273ee1f61ee0ae87a0b23f4da
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.7.0.beta.3

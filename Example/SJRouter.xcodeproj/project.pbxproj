@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E4261E16A571F2B0D67D67E /* Pods_SJRouter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF3A09E251C9CAC9A3E721 /* Pods_SJRouter_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,12 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		76905DED3913E7D7B42EEB5F /* libPods-SJRouter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D825FAA5DB59D5F900860CF /* libPods-SJRouter_Example.a */; };
 		775729212150D58200186126 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775729202150D58200186126 /* WebTestViewController.m */; };
-		77EE790522ACCD610052CAEE /* SJDemoRouteHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A343DA91BEAEB8A9DEBB6B0D /* Pods_SJRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */; };
-		A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */; };
-		A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22BF3A09E251C9CAC9A3E721 /* Pods_SJRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D825FAA5DB59D5F900860CF /* libPods-SJRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SJRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SJRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,17 +61,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7757291F2150D58200186126 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
 		775729202150D58200186126 /* WebTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTestViewController.m; sourceTree = "<group>"; };
-		77EE790322ACCD610052CAEE /* SJDemoRouteHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJDemoRouteHandlers.h; sourceTree = "<group>"; };
-		77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJDemoRouteHandlers.m; sourceTree = "<group>"; };
 		7ECA710100F9C8D2C28782D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A5CE6E238AD76D1FD93CDB6A /* Pods-SJRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Tests/Pods-SJRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewControllerPush.h; sourceTree = "<group>"; };
-		A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerPush.m; sourceTree = "<group>"; };
-		A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewControllerPresent.h; sourceTree = "<group>"; };
-		A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerPresent.m; sourceTree = "<group>"; };
 		ABA454D041C8C361A1FB9BC6 /* SJRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SJRouter.podspec; path = ../SJRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFDEB688BFCD80AC5011DD0D /* Pods-SJRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJRouter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF8C6BA3A89D8F88A4949120 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -89,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2E4261E16A571F2B0D67D67E /* Pods_SJRouter_Example.framework in Frameworks */,
+				76905DED3913E7D7B42EEB5F /* libPods-SJRouter_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +88,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A343DA91BEAEB8A9DEBB6B0D /* Pods_SJRouter_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +122,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				22BF3A09E251C9CAC9A3E721 /* Pods_SJRouter_Example.framework */,
 				433D81159C9D0C327D417C8F /* Pods_SJRouter_Tests.framework */,
+				2D825FAA5DB59D5F900860CF /* libPods-SJRouter_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,7 +138,6 @@
 				6003F5A6195388D20070C39A /* SJViewController.m */,
 				7757291F2150D58200186126 /* WebTestViewController.h */,
 				775729202150D58200186126 /* WebTestViewController.m */,
-				77EE790222ACCC3C0052CAEE /* ViewControllers */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -200,26 +186,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		77EE790222ACCC3C0052CAEE /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				77EE790322ACCD610052CAEE /* SJDemoRouteHandlers.h */,
-				77EE790422ACCD610052CAEE /* SJDemoRouteHandlers.m */,
-				A6D4F1E9214BF56800BE3062 /* TestViewControllerPush.h */,
-				A6D4F1EA214BF56800BE3062 /* TestViewControllerPush.m */,
-				A6D4F1EC214BF57000BE3062 /* TestViewControllerPresent.h */,
-				A6D4F1ED214BF57000BE3062 /* TestViewControllerPresent.m */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		8C01FA579DE0191F7F14B9E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				AFDEB688BFCD80AC5011DD0D /* Pods-SJRouter_Example.debug.xcconfig */,
 				82A4C703F6461124867482E6 /* Pods-SJRouter_Example.release.xcconfig */,
-				A5CE6E238AD76D1FD93CDB6A /* Pods-SJRouter_Tests.debug.xcconfig */,
-				82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -235,7 +206,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D62A7E2CA123AE7CF4286DB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +220,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SJRouter_Tests" */;
 			buildPhases = (
-				2F1D37F18C5183FDF1A03277 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -327,24 +296,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F1D37F18C5183FDF1A03277 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SJRouter_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6CE539BFBBC7DCD176CF1275 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,24 +314,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D62A7E2CA123AE7CF4286DB8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SJRouter/SJRouter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJRouter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SJRouter_Example/Pods-SJRouter_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -390,10 +323,7 @@
 			files = (
 				6003F59E195388D20070C39A /* SJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SJViewController.m in Sources */,
-				77EE790522ACCD610052CAEE /* SJDemoRouteHandlers.m in Sources */,
-				A6D4F1EE214BF57000BE3062 /* TestViewControllerPresent.m in Sources */,
 				775729212150D58200186126 /* WebTestViewController.m in Sources */,
-				A6D4F1EB214BF56800BE3062 /* TestViewControllerPush.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +486,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5CE6E238AD76D1FD93CDB6A /* Pods-SJRouter_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -580,7 +509,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82A7AE0D4A361F1CD83D5C71 /* Pods-SJRouter_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
