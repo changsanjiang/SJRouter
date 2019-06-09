@@ -18,11 +18,13 @@
 
 + (void)handleRequest:(SJRouteRequest *)request topViewController:(UIViewController *)topViewController completionHandler:(SJCompletionHandler)completionHandler {
     if ( [request.requestPath isEqualToString:@"test/vc/push"] ) {
+        NSLog(@"%@", request.prts);
         TestViewControllerPush *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"push"];
         [topViewController.navigationController pushViewController:vc animated:YES];
         if ( completionHandler ) completionHandler(nil, nil);
     }
     else if ( [request.requestPath isEqualToString:@"test/vc/present"] ) {
+        NSLog(@"%@", request.prts);
         TestViewControllerPresent *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"present"];
         [topViewController presentViewController:vc animated:YES completion:nil];
         if ( completionHandler ) completionHandler(nil, nil);
