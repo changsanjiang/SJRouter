@@ -7,138 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020CDDF9C746796F7C05694FAD1F0F61 /* ModuleB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA648077E24FDC2C82A6BCF236593B0B /* ModuleB-dummy.m */; };
-		0C2F364F341767BA37011C34C6FCB0F7 /* SJRouteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F10A45D5972C78475E87FA272082473 /* SJRouteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		156CBD094DC473EAD21D500BB046FC19 /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F115F7B1FCBABE05808E628FDA4054E /* MAViewController.m */; };
-		2D9567C7E45ECF5A55D1E25FC70FEE05 /* SJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 097AEF9C54CE9EC63AC707B2BE27FFDE /* SJRouter.m */; };
-		2EFB5FBE71F6B7F09EB65207D4E76CE0 /* SJRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 536A651A4F1B1130CC533AA609D0B881 /* SJRouteRequest.m */; };
-		3324BEBA196C1AD1EE1B81323CBAFFC1 /* MAViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5290ED01373C18665E12077DC290583A /* MAViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3459A824B9A43D38532D98FB28987B0F /* ModuleA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EAB9AF65EE06DD607BAAFCCB4A74D /* ModuleA-dummy.m */; };
-		3CA61E9E1720C81A41426C62AF85E0AF /* MAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EAE58654A432EEE80C2FD1755C518A /* MAModule.m */; };
-		59332F4C2EBB13137EDA02E9C5652C4D /* SJRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418E9D27192F49FB906883C624B01957 /* SJRouter-dummy.m */; };
-		5D9DEA85EDBCB3DEC58F1913CD077DF5 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79962C5806D18A91D6C9649DE50FB0F2 /* MBViewController.m */; };
-		6E215E1E43176DB55DF03903BA9BF52D /* MBModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D736867AE637BE51AE00ADEC49C99D8D /* MBModule.m */; };
-		77EE791822ACD3680052CAEE /* MA2ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EE791622ACD3680052CAEE /* MA2ViewController.h */; };
-		77EE791922ACD3680052CAEE /* MA2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EE791722ACD3680052CAEE /* MA2ViewController.m */; };
-		77EE791C22ACD3A20052CAEE /* MB2ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EE791A22ACD3A20052CAEE /* MB2ViewController.h */; };
-		77EE791D22ACD3A20052CAEE /* MB2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EE791B22ACD3A20052CAEE /* MB2ViewController.m */; };
-		7CB0B323B1A5306FC784465CC031F857 /* SJRouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 732768D8FCA71E1B198E1FA1F4965631 /* SJRouteRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		95F01334B47DFB3AF5EF342B60CC8790 /* Pods-SJRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4700942D3AB9A9F9F3E976290853BE2 /* Pods-SJRouter_Example-dummy.m */; };
-		A9416812C7CDDC60B8C6CBF7C5F24416 /* MBModule.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5CCD654ABDBA0F8E10297142351A9E /* MBModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B9F03CB8CFF8CBDD075AC1A3E6AC5E59 /* MBViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 11333B05F0C2708D66240FE79E4DA529 /* MBViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D337F35020B15E8BB9651FD16D8DAFB9 /* SJRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A58D5F3F23B89A1C5CCD6F4A112820 /* SJRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D69F23D7EC9CD831A06ECB04E3B953B3 /* MAModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4D2756218AA879A86DC946BBA1DF29 /* MAModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		05A1D2CA8E1664C3B53423AB21542CE9 /* MAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CC1BEEEECF0048AE4E6A7C5FCD7DDE /* MAModule.m */; };
+		077CD4D2C1783E9F3479E3CC6A268A21 /* ModuleA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 671CE1E5BE77F9C66811B277B0EDA1D7 /* ModuleA-dummy.m */; };
+		0C872721AEB3E18EFBA5114316E75A83 /* Pods-SJRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4700942D3AB9A9F9F3E976290853BE2 /* Pods-SJRouter_Example-dummy.m */; };
+		10CB2DAEDA22A83F96523264286BB40A /* MB2ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF8DC5B84CB07952218E1C1BCBD902D /* MB2ViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18EEED90C4A6A18B559D6F44BB782077 /* MAViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E0FCB8152A49E5AAC13BAFF72D8F21 /* MAViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A40B37B7CEB0C7A01B7101D9A3BCFFA /* SJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8111A96A47A96E85755998BD15A052 /* SJRouter.m */; };
+		1A608B0E6ED819A76EBD6A9CDFE7797B /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27443CE122B0B22A9B98CB0F512FF712 /* MAViewController.m */; };
+		20766A442CAE940D9C00DA1E29B85BA6 /* SJRouteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 27879777A9F604DF2F584B70965DC650 /* SJRouteObject.m */; };
+		211B6EBB74D112AD3958BE065BAA8218 /* SJRouteObject+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BF10362075C1A259FA30E9905E47A1BA /* SJRouteObject+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2CCE1A0981109B8702F02F88F6BECD5B /* MBModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAA158DF9644B3BA4801240F5230616 /* MBModule.m */; };
+		50CD8DE465C038EEC464932CB867C7D6 /* MB2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E08D0E39A151CA4251E06E4A0E2F0 /* MB2ViewController.m */; };
+		5FB53A3BA02C8075A84181FD8FB8049E /* MA2ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 287C63531E87C103C3F1050C040E7ADF /* MA2ViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		734E568D85AA4D1CDDCBB6305C44813D /* MA2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD307B5A9F6E3FACB2EA82E63FC4CF /* MA2ViewController.m */; };
+		84FC36ADB2A05889C908BD8EE2A34EA8 /* MBModule.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD3020A48B1216F1FBA81601D6CD5B2 /* MBModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9889D8516E1843AC46EBEAB71574F818 /* MBViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B9CFE0CE568661C352A7F1DCB78291 /* MBViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7D6C4A293359F0EA7B6F2ABD0ACB5A4 /* SJRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC63E6B1A54BD954F7894D6B865074F /* SJRouteRequest.m */; };
+		B8C4BA71569D4DEE4DAB862497F5EBA2 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DE4814BB56EAF446D2E74233A6231F /* MBViewController.m */; };
+		BE71D008626CA947CA9B374680FE7530 /* SJRouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 823C040C7377261C8CEFDCB688339CDE /* SJRouteRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1EE41C0506B07956D78B5382489C619 /* SJRouteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A7AFFA3380C1D7FB469894F84372B8 /* SJRouteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D61AF45D79F0F04A53351AA1F0EB12F5 /* MAModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0AEC6C5145FE69ADA405452F5156DF /* MAModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6C1B0F875AFDD5649749DDCD3D2D9FF /* SJRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 832A065EA2F7C533C677C928B9624F75 /* SJRouter-dummy.m */; };
+		EA642229F3F8AAE67960056C7CCDE375 /* ModuleB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F28503DF1FBD826DC06F2F98A9B5558 /* ModuleB-dummy.m */; };
+		F305CBBB10C940E018246541D28945A4 /* SJRouteObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E22FBC9FAFB05681B689964970753B5 /* SJRouteObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7188DD2883603108326591344566DD6 /* SJRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = E93D38961E9A9E7A1A9D801737676428 /* SJRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11904A419B67FD0FC5BDFB6C188F0F5B /* PBXContainerItemProxy */ = {
+		19F1C819922243793E69EA1B797342CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AC7ED7554C07C41E51C8BD5248179FED;
 			remoteInfo = SJRouter;
 		};
-		3CAB2C02799E0203F49247349F0A82FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC7ED7554C07C41E51C8BD5248179FED;
-			remoteInfo = SJRouter;
-		};
-		7B5381A8362B56466AE691713AAEB422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC7ED7554C07C41E51C8BD5248179FED;
-			remoteInfo = SJRouter;
-		};
-		8E9A56747C78454DE26DBE4FEC8D766B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 751082DD8E769C0B785EB5DC5083B66D;
-			remoteInfo = ModuleB;
-		};
-		90B375F81E6416DD4CABAD8477A58237 /* PBXContainerItemProxy */ = {
+		28653CAF7F33A249F48D44F4D6E5C7EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06A31A4544AC260976EFBA1FB33CFD7C;
 			remoteInfo = ModuleA;
 		};
+		4BEC1139ACB373C7BA0534B286689B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7ED7554C07C41E51C8BD5248179FED;
+			remoteInfo = SJRouter;
+		};
+		B30A434D8164BEDC0CE05F210180519B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 751082DD8E769C0B785EB5DC5083B66D;
+			remoteInfo = ModuleB;
+		};
+		CE2D6C6B27181E8E724F42E0A2E61168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7ED7554C07C41E51C8BD5248179FED;
+			remoteInfo = SJRouter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0855032397C306610CC9C7003E04E571 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		093A12ED8D56072CC8781BBB7277E254 /* ModuleB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ModuleB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		097AEF9C54CE9EC63AC707B2BE27FFDE /* SJRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SJRouter.m; path = SJRouter/SJRouter.m; sourceTree = "<group>"; };
-		11333B05F0C2708D66240FE79E4DA529 /* MBViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
+		05DE4814BB56EAF446D2E74233A6231F /* MBViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
+		163553481EF2B4D1D2CFD88E7220EDD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1DC26836C55488E0811F4C644DEAD16E /* Pods-SJRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SJRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2199825347792C371DA741BDF04F853F /* ModuleB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModuleB.xcconfig; sourceTree = "<group>"; };
-		24EAE58654A432EEE80C2FD1755C518A /* MAModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAModule.m; path = ModuleA/Classes/MAModule.m; sourceTree = "<group>"; };
-		2F115F7B1FCBABE05808E628FDA4054E /* MAViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
-		418E9D27192F49FB906883C624B01957 /* SJRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SJRouter-dummy.m"; sourceTree = "<group>"; };
+		27443CE122B0B22A9B98CB0F512FF712 /* MAViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
+		27879777A9F604DF2F584B70965DC650 /* SJRouteObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SJRouteObject.m; path = SJRouter/Core/SJRouteObject.m; sourceTree = "<group>"; };
+		287C63531E87C103C3F1050C040E7ADF /* MA2ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MA2ViewController.h; sourceTree = "<group>"; };
+		2C8DF322835A8920F8C15DF094B4C1C3 /* ModuleB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModuleB-prefix.pch"; sourceTree = "<group>"; };
+		33B24956A8BA4847CD4F25111BDFABB0 /* SJRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SJRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B112A1B37CE59DD1462A312DC505D54 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3BAD307B5A9F6E3FACB2EA82E63FC4CF /* MA2ViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MA2ViewController.m; sourceTree = "<group>"; };
+		4173DCFDADB3F5D8AD4E4FECE9473435 /* SJRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SJRouter-prefix.pch"; sourceTree = "<group>"; };
 		443D42D348FB01EE6F5CC07C5CFD5412 /* Pods-SJRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SJRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4746E0E8EE79DE34EE1B3859908DFEDE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4DBEA9DBC0109BA764844FA5764255DA /* ModuleA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModuleA-prefix.pch"; sourceTree = "<group>"; };
-		5290ED01373C18665E12077DC290583A /* MAViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
-		536A651A4F1B1130CC533AA609D0B881 /* SJRouteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SJRouteRequest.m; path = SJRouter/Core/SJRouteRequest.m; sourceTree = "<group>"; };
-		57A58D5F3F23B89A1C5CCD6F4A112820 /* SJRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouter.h; path = SJRouter/SJRouter.h; sourceTree = "<group>"; };
+		536BB2223C08C323843C5064749062D2 /* libModuleA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libModuleA.a; path = libModuleA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		597E39B2636762E20236219369AFF574 /* Pods-SJRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SJRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5F10A45D5972C78475E87FA272082473 /* SJRouteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouteHandler.h; path = SJRouter/Core/SJRouteHandler.h; sourceTree = "<group>"; };
-		63B4CC04AB7C31BEE6C4636FF34B0880 /* ModuleA.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModuleA.xcconfig; sourceTree = "<group>"; };
-		641C255B522EC72596DEA0B12B72C011 /* libModuleA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModuleA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		732768D8FCA71E1B198E1FA1F4965631 /* SJRouteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouteRequest.h; path = SJRouter/Core/SJRouteRequest.h; sourceTree = "<group>"; };
-		77EE791622ACD3680052CAEE /* MA2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MA2ViewController.h; sourceTree = "<group>"; };
-		77EE791722ACD3680052CAEE /* MA2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MA2ViewController.m; sourceTree = "<group>"; };
-		77EE791A22ACD3A20052CAEE /* MB2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MB2ViewController.h; sourceTree = "<group>"; };
-		77EE791B22ACD3A20052CAEE /* MB2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MB2ViewController.m; sourceTree = "<group>"; };
-		78183AEA0EF8B5CB2CAD8A41509010F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		79962C5806D18A91D6C9649DE50FB0F2 /* MBViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
-		7AE07E129D8C5643C86213D7F148F31D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7D52148ADFAD064496775BE41FE1114D /* SJRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SJRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		851EAB9AF65EE06DD607BAAFCCB4A74D /* ModuleA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModuleA-dummy.m"; sourceTree = "<group>"; };
-		891C6B7EF4DE4E0DDCEC10E9C09EB8B2 /* ModuleB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModuleB-prefix.pch"; sourceTree = "<group>"; };
-		8CF0EEAAB40757428FECE018F2D1F126 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9CE576DA0C6C0610F5A06EA6F44C7084 /* libPods-SJRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SJRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E4D2756218AA879A86DC946BBA1DF29 /* MAModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAModule.h; path = ModuleA/Classes/MAModule.h; sourceTree = "<group>"; };
-		AA648077E24FDC2C82A6BCF236593B0B /* ModuleB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModuleB-dummy.m"; sourceTree = "<group>"; };
+		59B9CFE0CE568661C352A7F1DCB78291 /* MBViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
+		5D0AEC6C5145FE69ADA405452F5156DF /* MAModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAModule.h; path = ModuleA/Classes/MAModule.h; sourceTree = "<group>"; };
+		5F2E08D0E39A151CA4251E06E4A0E2F0 /* MB2ViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MB2ViewController.m; sourceTree = "<group>"; };
+		5FAFE8693BD816339C7CAEFA017F8FFD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		62E0FCB8152A49E5AAC13BAFF72D8F21 /* MAViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
+		66A5B68CC8C0F7E720420EC221A440B7 /* libModuleB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libModuleB.a; path = libModuleB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		671CE1E5BE77F9C66811B277B0EDA1D7 /* ModuleA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModuleA-dummy.m"; sourceTree = "<group>"; };
+		6C8111A96A47A96E85755998BD15A052 /* SJRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SJRouter.m; path = SJRouter/SJRouter.m; sourceTree = "<group>"; };
+		74CC8D7163816A6543D8D14C18368889 /* SJRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SJRouter.xcconfig; sourceTree = "<group>"; };
+		77CC1BEEEECF0048AE4E6A7C5FCD7DDE /* MAModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAModule.m; path = ModuleA/Classes/MAModule.m; sourceTree = "<group>"; };
+		7F28503DF1FBD826DC06F2F98A9B5558 /* ModuleB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModuleB-dummy.m"; sourceTree = "<group>"; };
+		7FC63E6B1A54BD954F7894D6B865074F /* SJRouteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SJRouteRequest.m; path = SJRouter/Core/SJRouteRequest.m; sourceTree = "<group>"; };
+		818D12E5299A2DE405240AE10D018AD5 /* ModuleA.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModuleA.xcconfig; sourceTree = "<group>"; };
+		823C040C7377261C8CEFDCB688339CDE /* SJRouteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouteRequest.h; path = SJRouter/Core/SJRouteRequest.h; sourceTree = "<group>"; };
+		832A065EA2F7C533C677C928B9624F75 /* SJRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SJRouter-dummy.m"; sourceTree = "<group>"; };
+		8911015DC80AD93E24B70F24A22495E5 /* ModuleB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ModuleB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E22FBC9FAFB05681B689964970753B5 /* SJRouteObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouteObject.h; path = SJRouter/Core/SJRouteObject.h; sourceTree = "<group>"; };
+		8EB66FD663772C7FD5C2A48DDA202D3A /* ModuleA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ModuleA.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8EF8DC5B84CB07952218E1C1BCBD902D /* MB2ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MB2ViewController.h; sourceTree = "<group>"; };
+		954ADE036FD87037053C2154BC82C6EA /* ModuleB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModuleB.xcconfig; sourceTree = "<group>"; };
+		9AD2CF4D4AA3579D693D326E10486CBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAD3020A48B1216F1FBA81601D6CD5B2 /* MBModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBModule.h; path = ModuleB/Classes/MBModule.h; sourceTree = "<group>"; };
 		B4700942D3AB9A9F9F3E976290853BE2 /* Pods-SJRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SJRouter_Example-dummy.m"; sourceTree = "<group>"; };
-		B979B9F4DD6B288B66F9D83FBD9B96E6 /* SJRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SJRouter-prefix.pch"; sourceTree = "<group>"; };
-		BEA4338D0FAEC3B1BB588515A9543C51 /* ModuleA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ModuleA.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CB5CCD654ABDBA0F8E10297142351A9E /* MBModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBModule.h; path = ModuleB/Classes/MBModule.h; sourceTree = "<group>"; };
-		CD2646097DD4E419B2A22DA1542DC7B5 /* libModuleB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModuleB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D736867AE637BE51AE00ADEC49C99D8D /* MBModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBModule.m; path = ModuleB/Classes/MBModule.m; sourceTree = "<group>"; };
+		B6C8CD45F706A620078ED76592BE9DE1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BF10362075C1A259FA30E9905E47A1BA /* SJRouteObject+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SJRouteObject+Private.h"; path = "SJRouter/Core/SJRouteObject+Private.h"; sourceTree = "<group>"; };
+		C8A7AFFA3380C1D7FB469894F84372B8 /* SJRouteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouteHandler.h; path = SJRouter/Core/SJRouteHandler.h; sourceTree = "<group>"; };
+		CFAA158DF9644B3BA4801240F5230616 /* MBModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBModule.m; path = ModuleB/Classes/MBModule.m; sourceTree = "<group>"; };
+		D444CDB611C89A31497695905D2BA023 /* libSJRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSJRouter.a; path = libSJRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E0F9022B139B0485F15329A0B183B1 /* Pods-SJRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SJRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBB3D60144068C2372475E10D27E8EAF /* SJRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SJRouter.xcconfig; sourceTree = "<group>"; };
-		EBC71F1F8B8D3D5982259E6A6240AEA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EFB27115AB1829053A5A81808F284068 /* libSJRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSJRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AC1332B14CA512822E8FBC72A5DB5B /* ModuleA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModuleA-prefix.pch"; sourceTree = "<group>"; };
+		E93D38961E9A9E7A1A9D801737676428 /* SJRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SJRouter.h; path = SJRouter/SJRouter.h; sourceTree = "<group>"; };
+		EDE660BEE3F6C9FB1A7B5D5BA3C31FD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F8A398B96E07CB60251274008B402E12 /* libPods-SJRouter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SJRouter_Example.a"; path = "libPods-SJRouter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3CEA972F499E777095E99C02D8863E8B /* Frameworks */ = {
+		37DDEDEC36ED8E758267D71B78184D94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5670968DD0063FCA1A7EEF813263E7B8 /* Frameworks */ = {
+		4A124410DF1EDC37975E485C10829393 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		891F5764FED337B445C52DB3CE4724A6 /* Frameworks */ = {
+		A29A9A59CB03E763F37DE3B78BF5B759 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE13C27E338E1DBA70B66590AF6CADE9 /* Frameworks */ = {
+		C79B132BFFC048821F96A0EF1A6650EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,127 +154,164 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A28CFAFCADD9C170823CF7CBEE4DFDF /* Pod */ = {
+		07549D3E3505551A232E94CE2DD82590 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8CF0EEAAB40757428FECE018F2D1F126 /* LICENSE */,
-				093A12ED8D56072CC8781BBB7277E254 /* ModuleB.podspec */,
-				4746E0E8EE79DE34EE1B3859908DFEDE /* README.md */,
+				163553481EF2B4D1D2CFD88E7220EDD1 /* LICENSE */,
+				5FAFE8693BD816339C7CAEFA017F8FFD /* README.md */,
+				33B24956A8BA4847CD4F25111BDFABB0 /* SJRouter.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		28EE3337B8331C42F324D73ED3EEFADD /* Core */ = {
+		09450B4429AE03666915E8C53A86763A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				11333B05F0C2708D66240FE79E4DA529 /* MBViewController.h */,
-				79962C5806D18A91D6C9649DE50FB0F2 /* MBViewController.m */,
-				77EE791A22ACD3A20052CAEE /* MB2ViewController.h */,
-				77EE791B22ACD3A20052CAEE /* MB2ViewController.m */,
-			);
-			name = Core;
-			path = ModuleB/Classes/Core;
-			sourceTree = "<group>";
-		};
-		486027A44090F2CD36A5E19079E21F57 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				641C255B522EC72596DEA0B12B72C011 /* libModuleA.a */,
-				CD2646097DD4E419B2A22DA1542DC7B5 /* libModuleB.a */,
-				9CE576DA0C6C0610F5A06EA6F44C7084 /* libPods-SJRouter_Example.a */,
-				EFB27115AB1829053A5A81808F284068 /* libSJRouter.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5BE3DE5D0FEE28C8D1A5972DF06C54A3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				63B4CC04AB7C31BEE6C4636FF34B0880 /* ModuleA.xcconfig */,
-				851EAB9AF65EE06DD607BAAFCCB4A74D /* ModuleA-dummy.m */,
-				4DBEA9DBC0109BA764844FA5764255DA /* ModuleA-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Example/Pods/Target Support Files/ModuleA";
-			sourceTree = "<group>";
-		};
-		6377924E351C871552740D7E3BF07000 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				EBC71F1F8B8D3D5982259E6A6240AEA6 /* LICENSE */,
-				78183AEA0EF8B5CB2CAD8A41509010F5 /* README.md */,
-				7D52148ADFAD064496775BE41FE1114D /* SJRouter.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		850E383E25CD4603DA8A00114A1B15E1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EBB3D60144068C2372475E10D27E8EAF /* SJRouter.xcconfig */,
-				418E9D27192F49FB906883C624B01957 /* SJRouter-dummy.m */,
-				B979B9F4DD6B288B66F9D83FBD9B96E6 /* SJRouter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SJRouter";
-			sourceTree = "<group>";
-		};
-		86740F91B2151FB3ACFA34ADF498010F /* SJRouter */ = {
-			isa = PBXGroup;
-			children = (
-				57A58D5F3F23B89A1C5CCD6F4A112820 /* SJRouter.h */,
-				097AEF9C54CE9EC63AC707B2BE27FFDE /* SJRouter.m */,
-				8FD26A8705E7966D7A0B9941CE8CFDA2 /* Core */,
-				6377924E351C871552740D7E3BF07000 /* Pod */,
-				850E383E25CD4603DA8A00114A1B15E1 /* Support Files */,
-			);
-			name = SJRouter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		8FD26A8705E7966D7A0B9941CE8CFDA2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5F10A45D5972C78475E87FA272082473 /* SJRouteHandler.h */,
-				732768D8FCA71E1B198E1FA1F4965631 /* SJRouteRequest.h */,
-				536A651A4F1B1130CC533AA609D0B881 /* SJRouteRequest.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		BAE4F495E4C3688ACAA2B5B877FDF637 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5290ED01373C18665E12077DC290583A /* MAViewController.h */,
-				2F115F7B1FCBABE05808E628FDA4054E /* MAViewController.m */,
-				77EE791622ACD3680052CAEE /* MA2ViewController.h */,
-				77EE791722ACD3680052CAEE /* MA2ViewController.m */,
+				287C63531E87C103C3F1050C040E7ADF /* MA2ViewController.h */,
+				3BAD307B5A9F6E3FACB2EA82E63FC4CF /* MA2ViewController.m */,
+				62E0FCB8152A49E5AAC13BAFF72D8F21 /* MAViewController.h */,
+				27443CE122B0B22A9B98CB0F512FF712 /* MAViewController.m */,
 			);
 			name = Core;
 			path = ModuleA/Classes/Core;
 			sourceTree = "<group>";
 		};
+		2E7E9004DB6C507B915CC1E168C8E91A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C8A7AFFA3380C1D7FB469894F84372B8 /* SJRouteHandler.h */,
+				8E22FBC9FAFB05681B689964970753B5 /* SJRouteObject.h */,
+				27879777A9F604DF2F584B70965DC650 /* SJRouteObject.m */,
+				BF10362075C1A259FA30E9905E47A1BA /* SJRouteObject+Private.h */,
+				823C040C7377261C8CEFDCB688339CDE /* SJRouteRequest.h */,
+				7FC63E6B1A54BD954F7894D6B865074F /* SJRouteRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		486027A44090F2CD36A5E19079E21F57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536BB2223C08C323843C5064749062D2 /* libModuleA.a */,
+				66A5B68CC8C0F7E720420EC221A440B7 /* libModuleB.a */,
+				F8A398B96E07CB60251274008B402E12 /* libPods-SJRouter_Example.a */,
+				D444CDB611C89A31497695905D2BA023 /* libSJRouter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78DE00A9371AF9E720BA409AC17571F2 /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				5D0AEC6C5145FE69ADA405452F5156DF /* MAModule.h */,
+				77CC1BEEEECF0048AE4E6A7C5FCD7DDE /* MAModule.m */,
+				09450B4429AE03666915E8C53A86763A /* Core */,
+				B69E987AD50BBEB427F5836DFD96C0E2 /* Pod */,
+				BC6C0EFA90272A127F6D252223CFEEA9 /* Support Files */,
+			);
+			name = ModuleA;
+			path = ../../ModuleA;
+			sourceTree = "<group>";
+		};
+		8F2717CBB469D62A3EE947BBFA4CB885 /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3020A48B1216F1FBA81601D6CD5B2 /* MBModule.h */,
+				CFAA158DF9644B3BA4801240F5230616 /* MBModule.m */,
+				B4314BBE9B463EBE131D1535B596C3AB /* Core */,
+				B744A00FC3136C1FF2AAB2B0528C07A5 /* Pod */,
+				904B9F05395878AE0BDA81286A7C3D38 /* Support Files */,
+			);
+			name = ModuleB;
+			path = ../../ModuleB;
+			sourceTree = "<group>";
+		};
+		904B9F05395878AE0BDA81286A7C3D38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				954ADE036FD87037053C2154BC82C6EA /* ModuleB.xcconfig */,
+				7F28503DF1FBD826DC06F2F98A9B5558 /* ModuleB-dummy.m */,
+				2C8DF322835A8920F8C15DF094B4C1C3 /* ModuleB-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Example/Pods/Target Support Files/ModuleB";
+			sourceTree = "<group>";
+		};
+		A8F950CA2171ED1C6DE45E51A689B284 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74CC8D7163816A6543D8D14C18368889 /* SJRouter.xcconfig */,
+				832A065EA2F7C533C677C928B9624F75 /* SJRouter-dummy.m */,
+				4173DCFDADB3F5D8AD4E4FECE9473435 /* SJRouter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SJRouter";
+			sourceTree = "<group>";
+		};
+		B4314BBE9B463EBE131D1535B596C3AB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8EF8DC5B84CB07952218E1C1BCBD902D /* MB2ViewController.h */,
+				5F2E08D0E39A151CA4251E06E4A0E2F0 /* MB2ViewController.m */,
+				59B9CFE0CE568661C352A7F1DCB78291 /* MBViewController.h */,
+				05DE4814BB56EAF446D2E74233A6231F /* MBViewController.m */,
+			);
+			name = Core;
+			path = ModuleB/Classes/Core;
+			sourceTree = "<group>";
+		};
+		B5C293FCD75DC3527DC1A62F6A968186 /* SJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				E93D38961E9A9E7A1A9D801737676428 /* SJRouter.h */,
+				6C8111A96A47A96E85755998BD15A052 /* SJRouter.m */,
+				2E7E9004DB6C507B915CC1E168C8E91A /* Core */,
+				07549D3E3505551A232E94CE2DD82590 /* Pod */,
+				A8F950CA2171ED1C6DE45E51A689B284 /* Support Files */,
+			);
+			name = SJRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B69E987AD50BBEB427F5836DFD96C0E2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9AD2CF4D4AA3579D693D326E10486CBA /* LICENSE */,
+				8EB66FD663772C7FD5C2A48DDA202D3A /* ModuleA.podspec */,
+				3B112A1B37CE59DD1462A312DC505D54 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B744A00FC3136C1FF2AAB2B0528C07A5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EDE660BEE3F6C9FB1A7B5D5BA3C31FD9 /* LICENSE */,
+				8911015DC80AD93E24B70F24A22495E5 /* ModuleB.podspec */,
+				B6C8CD45F706A620078ED76592BE9DE1 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		BC4A13055A715763DBF726C257676F5D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE26D260B686A14C8CF27C57CB8A63F8 /* ModuleA */,
-				C8B3E6D472B4DE250A985839BE9425E1 /* ModuleB */,
-				86740F91B2151FB3ACFA34ADF498010F /* SJRouter */,
+				78DE00A9371AF9E720BA409AC17571F2 /* ModuleA */,
+				8F2717CBB469D62A3EE947BBFA4CB885 /* ModuleB */,
+				B5C293FCD75DC3527DC1A62F6A968186 /* SJRouter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		C8B3E6D472B4DE250A985839BE9425E1 /* ModuleB */ = {
+		BC6C0EFA90272A127F6D252223CFEEA9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB5CCD654ABDBA0F8E10297142351A9E /* MBModule.h */,
-				D736867AE637BE51AE00ADEC49C99D8D /* MBModule.m */,
-				28EE3337B8331C42F324D73ED3EEFADD /* Core */,
-				0A28CFAFCADD9C170823CF7CBEE4DFDF /* Pod */,
-				E348122B9FD1DFC9F591ADEBDDE83DD4 /* Support Files */,
+				818D12E5299A2DE405240AE10D018AD5 /* ModuleA.xcconfig */,
+				671CE1E5BE77F9C66811B277B0EDA1D7 /* ModuleA-dummy.m */,
+				E6AC1332B14CA512822E8FBC72A5DB5B /* ModuleA-prefix.pch */,
 			);
-			name = ModuleB;
-			path = ../../ModuleB;
+			name = "Support Files";
+			path = "../Example/Pods/Target Support Files/ModuleA";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -302,17 +345,6 @@
 			path = "Target Support Files/Pods-SJRouter_Example";
 			sourceTree = "<group>";
 		};
-		E348122B9FD1DFC9F591ADEBDDE83DD4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2199825347792C371DA741BDF04F853F /* ModuleB.xcconfig */,
-				AA648077E24FDC2C82A6BCF236593B0B /* ModuleB-dummy.m */,
-				891C6B7EF4DE4E0DDCEC10E9C09EB8B2 /* ModuleB-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Example/Pods/Target Support Files/ModuleB";
-			sourceTree = "<group>";
-		};
 		E7989AF7E62834D44BEE25F92D4B2A9A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,66 +353,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EE26D260B686A14C8CF27C57CB8A63F8 /* ModuleA */ = {
-			isa = PBXGroup;
-			children = (
-				9E4D2756218AA879A86DC946BBA1DF29 /* MAModule.h */,
-				24EAE58654A432EEE80C2FD1755C518A /* MAModule.m */,
-				BAE4F495E4C3688ACAA2B5B877FDF637 /* Core */,
-				FF1C06AD5333CE80F9B4022F69E5D409 /* Pod */,
-				5BE3DE5D0FEE28C8D1A5972DF06C54A3 /* Support Files */,
-			);
-			name = ModuleA;
-			path = ../../ModuleA;
-			sourceTree = "<group>";
-		};
-		FF1C06AD5333CE80F9B4022F69E5D409 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7AE07E129D8C5643C86213D7F148F31D /* LICENSE */,
-				BEA4338D0FAEC3B1BB588515A9543C51 /* ModuleA.podspec */,
-				0855032397C306610CC9C7003E04E571 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F83AAAE7B7709BA53891FF4D6F60B2A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C2F364F341767BA37011C34C6FCB0F7 /* SJRouteHandler.h in Headers */,
-				D337F35020B15E8BB9651FD16D8DAFB9 /* SJRouter.h in Headers */,
-				7CB0B323B1A5306FC784465CC031F857 /* SJRouteRequest.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		870BCC34D174D7CD798826410CBFDD38 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9416812C7CDDC60B8C6CBF7C5F24416 /* MBModule.h in Headers */,
-				B9F03CB8CFF8CBDD075AC1A3E6AC5E59 /* MBViewController.h in Headers */,
-				77EE791C22ACD3A20052CAEE /* MB2ViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B357EEFDEA7872D3A78D612BE917BD7A /* Headers */ = {
+		65D0D0B77C1B72A0B3F7DEB08A138144 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD37D7BE991F480049CA5B1851799A72 /* Headers */ = {
+		726DCBB4DC95824F7C9885A0C7EADF58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EE791822ACD3680052CAEE /* MA2ViewController.h in Headers */,
-				D69F23D7EC9CD831A06ECB04E3B953B3 /* MAModule.h in Headers */,
-				3324BEBA196C1AD1EE1B81323CBAFFC1 /* MAViewController.h in Headers */,
+				D1EE41C0506B07956D78B5382489C619 /* SJRouteHandler.h in Headers */,
+				211B6EBB74D112AD3958BE065BAA8218 /* SJRouteObject+Private.h in Headers */,
+				F305CBBB10C940E018246541D28945A4 /* SJRouteObject.h in Headers */,
+				F7188DD2883603108326591344566DD6 /* SJRouter.h in Headers */,
+				BE71D008626CA947CA9B374680FE7530 /* SJRouteRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E417DFBA83F069D07FDF4AF3E49E2A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB53A3BA02C8075A84181FD8FB8049E /* MA2ViewController.h in Headers */,
+				D61AF45D79F0F04A53351AA1F0EB12F5 /* MAModule.h in Headers */,
+				18EEED90C4A6A18B559D6F44BB782077 /* MAViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8943EADAB17C7F73544258E810BE3CE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB2DAEDA22A83F96523264286BB40A /* MB2ViewController.h in Headers */,
+				84FC36ADB2A05889C908BD8EE2A34EA8 /* MBModule.h in Headers */,
+				9889D8516E1843AC46EBEAB71574F818 /* MBViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,67 +400,67 @@
 /* Begin PBXNativeTarget section */
 		06A31A4544AC260976EFBA1FB33CFD7C /* ModuleA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 397D3EE1C583F2CB55EA6F07A90E95BD /* Build configuration list for PBXNativeTarget "ModuleA" */;
+			buildConfigurationList = F58A03FE1B83B68CFFD6241F3807CBA3 /* Build configuration list for PBXNativeTarget "ModuleA" */;
 			buildPhases = (
-				DD37D7BE991F480049CA5B1851799A72 /* Headers */,
-				097DEA2EBB2F6F484FF8CC49C9DB5CEB /* Sources */,
-				5670968DD0063FCA1A7EEF813263E7B8 /* Frameworks */,
+				7E417DFBA83F069D07FDF4AF3E49E2A5 /* Headers */,
+				E415775908C75F78212B17E85F05857C /* Sources */,
+				37DDEDEC36ED8E758267D71B78184D94 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				58829B81F3E32915C29AFD6EFB3D6489 /* PBXTargetDependency */,
+				FC9593E59C17DF7CA3D6E7AD85248C5F /* PBXTargetDependency */,
 			);
 			name = ModuleA;
 			productName = ModuleA;
-			productReference = 641C255B522EC72596DEA0B12B72C011 /* libModuleA.a */;
+			productReference = 536BB2223C08C323843C5064749062D2 /* libModuleA.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4F8226E737E6192735212291376B943E /* Pods-SJRouter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AA43213E7FC00355E2E4E26FE83229C /* Build configuration list for PBXNativeTarget "Pods-SJRouter_Example" */;
+			buildConfigurationList = 91BB420F3E39F48AE3FC5E1000D45344 /* Build configuration list for PBXNativeTarget "Pods-SJRouter_Example" */;
 			buildPhases = (
-				B357EEFDEA7872D3A78D612BE917BD7A /* Headers */,
-				F640962928D534F1856A7278EB2923EB /* Sources */,
-				BE13C27E338E1DBA70B66590AF6CADE9 /* Frameworks */,
+				65D0D0B77C1B72A0B3F7DEB08A138144 /* Headers */,
+				F1D05034B97BA0A1FA9E420558B9ED31 /* Sources */,
+				A29A9A59CB03E763F37DE3B78BF5B759 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D03DD1CE173D1E7BDB71F8B8BBD5FC3 /* PBXTargetDependency */,
-				9F9CBB91F36D95F242049162E989642B /* PBXTargetDependency */,
-				3F45E5A806CF44717CD9BA1AA5CF774D /* PBXTargetDependency */,
+				610A19DD4B9C984103175A567CED612A /* PBXTargetDependency */,
+				EECADE8BC2D28EE3ABE9D3670086DBDF /* PBXTargetDependency */,
+				1790E2482657DD1819590652686E3D4A /* PBXTargetDependency */,
 			);
 			name = "Pods-SJRouter_Example";
 			productName = "Pods-SJRouter_Example";
-			productReference = 9CE576DA0C6C0610F5A06EA6F44C7084 /* libPods-SJRouter_Example.a */;
+			productReference = F8A398B96E07CB60251274008B402E12 /* libPods-SJRouter_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		751082DD8E769C0B785EB5DC5083B66D /* ModuleB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95A7B284BA926E5E14356AF59C624501 /* Build configuration list for PBXNativeTarget "ModuleB" */;
+			buildConfigurationList = 7C595253393A0C134AC4C2C43F244809 /* Build configuration list for PBXNativeTarget "ModuleB" */;
 			buildPhases = (
-				870BCC34D174D7CD798826410CBFDD38 /* Headers */,
-				F25D7E11B7CD7B07811E486073D2492D /* Sources */,
-				891F5764FED337B445C52DB3CE4724A6 /* Frameworks */,
+				8943EADAB17C7F73544258E810BE3CE5 /* Headers */,
+				51139C57B8E1A5C943F33118B5FE41BC /* Sources */,
+				C79B132BFFC048821F96A0EF1A6650EA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				610855107F159563337AF659729D0232 /* PBXTargetDependency */,
+				42895A95F959FFE6FF7674B1D86136B1 /* PBXTargetDependency */,
 			);
 			name = ModuleB;
 			productName = ModuleB;
-			productReference = CD2646097DD4E419B2A22DA1542DC7B5 /* libModuleB.a */;
+			productReference = 66A5B68CC8C0F7E720420EC221A440B7 /* libModuleB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FD047C209237E31032C6F762224B9F5 /* Build configuration list for PBXNativeTarget "SJRouter" */;
+			buildConfigurationList = 1550B05B7D0BF4B72D4710BCE9E2D980 /* Build configuration list for PBXNativeTarget "SJRouter" */;
 			buildPhases = (
-				0F83AAAE7B7709BA53891FF4D6F60B2A /* Headers */,
-				830C85810040E5CFADA703A39EB7E2CC /* Sources */,
-				3CEA972F499E777095E99C02D8863E8B /* Frameworks */,
+				726DCBB4DC95824F7C9885A0C7EADF58 /* Headers */,
+				D9056013B8A926F7A1A46B0B4B244962 /* Sources */,
+				4A124410DF1EDC37975E485C10829393 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -457,7 +468,7 @@
 			);
 			name = SJRouter;
 			productName = SJRouter;
-			productReference = EFB27115AB1829053A5A81808F284068 /* libSJRouter.a */;
+			productReference = D444CDB611C89A31497695905D2BA023 /* libSJRouter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -466,8 +477,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,141 +501,98 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		097DEA2EBB2F6F484FF8CC49C9DB5CEB /* Sources */ = {
+		51139C57B8E1A5C943F33118B5FE41BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA61E9E1720C81A41426C62AF85E0AF /* MAModule.m in Sources */,
-				77EE791922ACD3680052CAEE /* MA2ViewController.m in Sources */,
-				156CBD094DC473EAD21D500BB046FC19 /* MAViewController.m in Sources */,
-				3459A824B9A43D38532D98FB28987B0F /* ModuleA-dummy.m in Sources */,
+				50CD8DE465C038EEC464932CB867C7D6 /* MB2ViewController.m in Sources */,
+				2CCE1A0981109B8702F02F88F6BECD5B /* MBModule.m in Sources */,
+				B8C4BA71569D4DEE4DAB862497F5EBA2 /* MBViewController.m in Sources */,
+				EA642229F3F8AAE67960056C7CCDE375 /* ModuleB-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		830C85810040E5CFADA703A39EB7E2CC /* Sources */ = {
+		D9056013B8A926F7A1A46B0B4B244962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59332F4C2EBB13137EDA02E9C5652C4D /* SJRouter-dummy.m in Sources */,
-				2D9567C7E45ECF5A55D1E25FC70FEE05 /* SJRouter.m in Sources */,
-				2EFB5FBE71F6B7F09EB65207D4E76CE0 /* SJRouteRequest.m in Sources */,
+				20766A442CAE940D9C00DA1E29B85BA6 /* SJRouteObject.m in Sources */,
+				E6C1B0F875AFDD5649749DDCD3D2D9FF /* SJRouter-dummy.m in Sources */,
+				1A40B37B7CEB0C7A01B7101D9A3BCFFA /* SJRouter.m in Sources */,
+				B7D6C4A293359F0EA7B6F2ABD0ACB5A4 /* SJRouteRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F25D7E11B7CD7B07811E486073D2492D /* Sources */ = {
+		E415775908C75F78212B17E85F05857C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E215E1E43176DB55DF03903BA9BF52D /* MBModule.m in Sources */,
-				5D9DEA85EDBCB3DEC58F1913CD077DF5 /* MBViewController.m in Sources */,
-				77EE791D22ACD3A20052CAEE /* MB2ViewController.m in Sources */,
-				020CDDF9C746796F7C05694FAD1F0F61 /* ModuleB-dummy.m in Sources */,
+				734E568D85AA4D1CDDCBB6305C44813D /* MA2ViewController.m in Sources */,
+				05A1D2CA8E1664C3B53423AB21542CE9 /* MAModule.m in Sources */,
+				1A608B0E6ED819A76EBD6A9CDFE7797B /* MAViewController.m in Sources */,
+				077CD4D2C1783E9F3479E3CC6A268A21 /* ModuleA-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F640962928D534F1856A7278EB2923EB /* Sources */ = {
+		F1D05034B97BA0A1FA9E420558B9ED31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F01334B47DFB3AF5EF342B60CC8790 /* Pods-SJRouter_Example-dummy.m in Sources */,
+				0C872721AEB3E18EFBA5114316E75A83 /* Pods-SJRouter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D03DD1CE173D1E7BDB71F8B8BBD5FC3 /* PBXTargetDependency */ = {
+		1790E2482657DD1819590652686E3D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SJRouter;
+			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
+			targetProxy = CE2D6C6B27181E8E724F42E0A2E61168 /* PBXContainerItemProxy */;
+		};
+		42895A95F959FFE6FF7674B1D86136B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SJRouter;
+			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
+			targetProxy = 4BEC1139ACB373C7BA0534B286689B81 /* PBXContainerItemProxy */;
+		};
+		610A19DD4B9C984103175A567CED612A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ModuleA;
 			target = 06A31A4544AC260976EFBA1FB33CFD7C /* ModuleA */;
-			targetProxy = 90B375F81E6416DD4CABAD8477A58237 /* PBXContainerItemProxy */;
+			targetProxy = 28653CAF7F33A249F48D44F4D6E5C7EF /* PBXContainerItemProxy */;
 		};
-		3F45E5A806CF44717CD9BA1AA5CF774D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SJRouter;
-			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
-			targetProxy = 7B5381A8362B56466AE691713AAEB422 /* PBXContainerItemProxy */;
-		};
-		58829B81F3E32915C29AFD6EFB3D6489 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SJRouter;
-			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
-			targetProxy = 3CAB2C02799E0203F49247349F0A82FA /* PBXContainerItemProxy */;
-		};
-		610855107F159563337AF659729D0232 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SJRouter;
-			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
-			targetProxy = 11904A419B67FD0FC5BDFB6C188F0F5B /* PBXContainerItemProxy */;
-		};
-		9F9CBB91F36D95F242049162E989642B /* PBXTargetDependency */ = {
+		EECADE8BC2D28EE3ABE9D3670086DBDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ModuleB;
 			target = 751082DD8E769C0B785EB5DC5083B66D /* ModuleB */;
-			targetProxy = 8E9A56747C78454DE26DBE4FEC8D766B /* PBXContainerItemProxy */;
+			targetProxy = B30A434D8164BEDC0CE05F210180519B /* PBXContainerItemProxy */;
+		};
+		FC9593E59C17DF7CA3D6E7AD85248C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SJRouter;
+			target = AC7ED7554C07C41E51C8BD5248179FED /* SJRouter */;
+			targetProxy = 19F1C819922243793E69EA1B797342CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		28CB25DA1E3913A61C450B6FB8CE88B3 /* Debug */ = {
+		1465D03585C8DEF83583107A5E504541 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB3D60144068C2372475E10D27E8EAF /* SJRouter.xcconfig */;
+			baseConfigurationReference = 818D12E5299A2DE405240AE10D018AD5 /* ModuleA.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SJRouter/SJRouter-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/ModuleA/ModuleA-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SJRouter;
-				PRODUCT_NAME = SJRouter;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		31EA37259A379C761ABF0432AA47FA88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 443D42D348FB01EE6F5CC07C5CFD5412 /* Pods-SJRouter_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		326A76329A1F95D359D9F8B399804CCC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB3D60144068C2372475E10D27E8EAF /* SJRouter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SJRouter/SJRouter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SJRouter;
-				PRODUCT_NAME = SJRouter;
+				PRODUCT_MODULE_NAME = ModuleA;
+				PRODUCT_NAME = ModuleA;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -634,9 +602,32 @@
 			};
 			name = Release;
 		};
-		61378DDB7128E2ABB72507937A70A046 /* Release */ = {
+		149A76BEBBE80CDE9B499D16DC7546D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2199825347792C371DA741BDF04F853F /* ModuleB.xcconfig */;
+			baseConfigurationReference = 74CC8D7163816A6543D8D14C18368889 /* SJRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SJRouter/SJRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SJRouter;
+				PRODUCT_NAME = SJRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42B4DCA4113362A591E4FC0FDC83BF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954ADE036FD87037053C2154BC82C6EA /* ModuleB.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -658,30 +649,7 @@
 			};
 			name = Release;
 		};
-		A4AE3C06EDDEF0B9D57510F62FEB3121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63B4CC04AB7C31BEE6C4636FF34B0880 /* ModuleA.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ModuleA/ModuleA-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ModuleA;
-				PRODUCT_NAME = ModuleA;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ACEBA014D0FF2C684515B954D88D37D1 /* Release */ = {
+		67E94962CFC3060D1A265312BE637B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DC26836C55488E0811F4C644DEAD16E /* Pods-SJRouter_Example.release.xcconfig */;
 			buildSettings = {
@@ -698,6 +666,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		899BF2D486ADF31FAB76FF38EA3959CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CC8D7163816A6543D8D14C18368889 /* SJRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SJRouter/SJRouter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SJRouter;
+				PRODUCT_NAME = SJRouter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -756,7 +748,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -826,9 +819,9 @@
 			};
 			name = Debug;
 		};
-		D5F5F0193B8BAA29D2E3E366D8B6ADB9 /* Debug */ = {
+		BF7912CF89FEB2F611DAF51C09D23380 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2199825347792C371DA741BDF04F853F /* ModuleB.xcconfig */;
+			baseConfigurationReference = 954ADE036FD87037053C2154BC82C6EA /* ModuleB.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -849,9 +842,30 @@
 			};
 			name = Debug;
 		};
-		D6DBB67CDD79D51B4922F1AA87105713 /* Release */ = {
+		ECA7FC9ACD10157C8CDD0AAED3368928 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63B4CC04AB7C31BEE6C4636FF34B0880 /* ModuleA.xcconfig */;
+			baseConfigurationReference = 443D42D348FB01EE6F5CC07C5CFD5412 /* Pods-SJRouter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3D766EFBE84F8B5997AB43CA6173267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818D12E5299A2DE405240AE10D018AD5 /* ModuleA.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -869,18 +883,17 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		397D3EE1C583F2CB55EA6F07A90E95BD /* Build configuration list for PBXNativeTarget "ModuleA" */ = {
+		1550B05B7D0BF4B72D4710BCE9E2D980 /* Build configuration list for PBXNativeTarget "SJRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4AE3C06EDDEF0B9D57510F62FEB3121 /* Debug */,
-				D6DBB67CDD79D51B4922F1AA87105713 /* Release */,
+				149A76BEBBE80CDE9B499D16DC7546D5 /* Debug */,
+				899BF2D486ADF31FAB76FF38EA3959CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -894,29 +907,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FD047C209237E31032C6F762224B9F5 /* Build configuration list for PBXNativeTarget "SJRouter" */ = {
+		7C595253393A0C134AC4C2C43F244809 /* Build configuration list for PBXNativeTarget "ModuleB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28CB25DA1E3913A61C450B6FB8CE88B3 /* Debug */,
-				326A76329A1F95D359D9F8B399804CCC /* Release */,
+				BF7912CF89FEB2F611DAF51C09D23380 /* Debug */,
+				42B4DCA4113362A591E4FC0FDC83BF90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95A7B284BA926E5E14356AF59C624501 /* Build configuration list for PBXNativeTarget "ModuleB" */ = {
+		91BB420F3E39F48AE3FC5E1000D45344 /* Build configuration list for PBXNativeTarget "Pods-SJRouter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5F5F0193B8BAA29D2E3E366D8B6ADB9 /* Debug */,
-				61378DDB7128E2ABB72507937A70A046 /* Release */,
+				ECA7FC9ACD10157C8CDD0AAED3368928 /* Debug */,
+				67E94962CFC3060D1A265312BE637B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AA43213E7FC00355E2E4E26FE83229C /* Build configuration list for PBXNativeTarget "Pods-SJRouter_Example" */ = {
+		F58A03FE1B83B68CFFD6241F3807CBA3 /* Build configuration list for PBXNativeTarget "ModuleA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31EA37259A379C761ABF0432AA47FA88 /* Debug */,
-				ACEBA014D0FF2C684515B954D88D37D1 /* Release */,
+				F3D766EFBE84F8B5997AB43CA6173267 /* Debug */,
+				1465D03585C8DEF83583107A5E504541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,17 +22,17 @@
 }
 
 - (IBAction)ma:(id)sender {
-    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MAModule/A1" parameters:nil];
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MAModule/A1" parameters:@{@"测试请求参数":@"123"}];
     [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 
 - (IBAction)mb:(id)sender {
-    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MBModule/B1" parameters:nil];
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithPath:@"MBModule/B1" parameters:@{@"测试请求参数":@"123"}];
     [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 
 - (IBAction)un:(id)sender {
-    SJRouteRequest *request = [[SJRouteRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    SJRouteRequest *request = [[SJRouteRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com/test/01.ts?id=123"]];
     [SJRouter.shared handleRequest:request completionHandler:nil];
 }
 

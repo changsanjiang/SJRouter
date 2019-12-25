@@ -15,12 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation SJRouteRequest
 - (instancetype)initWithPath:(NSString *)rq parameters:(nullable SJParameters)prts {
+#ifdef DEBUG
     NSParameterAssert(rq);
+#endif
+    return [self _initWithPath:rq parameters:prts];
+}
+
+- (instancetype)_initWithPath:(nullable NSString *)rq parameters:(nullable SJParameters)prts {
     self = [super init];
-    if ( !self ) return nil;
-    while ( [rq hasPrefix:@"/"] ) rq = [rq substringFromIndex:1];
-    _requestPath = rq.copy?:@"";
-    _prts = prts;
+    if ( self ) {
+        while ( [rq hasPrefix:@"/"] ) rq = [rq substringFromIndex:1];
+        _requestPath = rq.copy;
+        _prts = prts;
+    }
     return self;
 }
 
@@ -35,7 +42,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @implementation SJRouteRequest(CreateByURL)
-- (instancetype)initWithURL:(NSURL *)URL {
+- (nullable instancetype)initWithURL:(NSURL *)URL {
+#ifdef DEBUG
+    NSParameterAssert(URL);
+#endif
+    if ( URL == nil ) return nil;
     SJParameters parameters = nil;
     NSURLComponents *c = [[NSURLComponents alloc] initWithURL:URL resolvingAgainstBaseURL:YES];
     if ( 0 != c.queryItems.count ) {
@@ -45,9 +56,10 @@ NS_ASSUME_NONNULL_BEGIN
         }
         parameters = m.copy;
     }
-    self = [self initWithPath:URL.path.stringByDeletingPathExtension parameters:parameters];
-    if ( !self ) return nil;
-    _originalURL = URL;
+    self = [self _initWithPath:URL.path.stringByDeletingPathExtension parameters:parameters];
+    if ( self ) {
+        _originalURL = URL;
+    }
     return self;
 }
 @end
