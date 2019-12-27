@@ -31,6 +31,44 @@ NS_ASSUME_NONNULL_BEGIN
     return self;
 }
 
+- (void)setValue:(nullable id)value forParameterKey:(NSString *)key {
+    if ( key.length != 0 ) {
+        NSMutableDictionary *dictm = _prts ? [_prts mutableCopy] : NSMutableDictionary.new;
+        dictm[key] = value;
+        _prts = dictm.copy;
+        
+        if ( _originalURL != nil ) {
+            NSURLComponents *components = [[NSURLComponents alloc] initWithURL:_originalURL resolvingAgainstBaseURL:YES];
+            NSMutableArray<NSURLQueryItem *> *arrm = components.queryItems ? [components.queryItems mutableCopy] : NSMutableArray.new;
+            __block NSInteger index = NSNotFound;
+            [arrm enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSURLQueryItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
+                if ( [item.name isEqualToString:key] ) {
+                    index = idx;
+                    *stop = YES;
+                }
+            }];
+            
+            if ( index == NSNotFound ) index = arrm.count;
+            
+            if ( value == nil ) {
+                if ( index < arrm.count ) [arrm removeObjectAtIndex:index];
+            }
+            else {
+                NSURLQueryItem *item = [NSURLQueryItem queryItemWithName:key value:[NSString stringWithFormat:@"%@", value]];
+                [arrm insertObject:item atIndex:index];
+            }
+            components.queryItems = [arrm copy];
+            _originalURL = components.URL;
+        }
+    }
+}
+
+- (void)addParameters:(NSDictionary *)parameters {
+    [parameters enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [self setValue:obj forParameterKey:key];
+    }];
+}
+
 - (NSString *)description {
     return
     [NSString stringWithFormat:@"[%@<%p>] {\n \

@@ -21,5 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SJRouteRequest(CreateByURL)
 - (nullable instancetype)initWithURL:(NSURL *)URL;
 @property (nonatomic, strong, readonly, nullable) NSURL *originalURL;
+
+/// 追加参数
+- (void)setValue:(nullable id)value forParameterKey:(NSString *)key;
+- (void)addParameters:(NSDictionary *)parameters;
 @end
 NS_ASSUME_NONNULL_END

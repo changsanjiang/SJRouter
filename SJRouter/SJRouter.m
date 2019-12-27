@@ -27,12 +27,10 @@ static UIViewController *_sj_get_top_view_controller() {
 
 @interface SJRouter()
 @property (nonatomic, strong, readonly) NSMutableDictionary<NSString *, id<SJRouteHandler>> *handlersM;
+@property (nonatomic, strong, readonly) dispatch_semaphore_t lock;
 @end
 
-@implementation SJRouter {
-    dispatch_group_t _group;
-}
-
+@implementation SJRouter
 static SEL sel_handler_v1 __deprecated_msg("use `sel_handler_v2`");
 static SEL sel_handler_v2;
 static SEL sel_instance;
@@ -61,9 +59,10 @@ static SEL sel_instance;
 - (instancetype)init {
     self = [super init];
     if ( !self ) return nil;
+    _lock = dispatch_semaphore_create(0);
     _handlersM = [NSMutableDictionary new];
-    _group = dispatch_group_create();
-    dispatch_group_async(_group, dispatch_get_global_queue(0, 0), ^{
+
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
         /// Thanks @yehot, @Potato121
         /// https://www.jianshu.com/p/534eccb63974
         /// https://github.com/changsanjiang/SJRouter/pull/1
@@ -112,8 +111,8 @@ static SEL sel_instance;
             if ( names ) free(names);
         }
         if ( imgs ) free(imgs);
+        dispatch_semaphore_signal(self->_lock);
     });
-    
     return self;
 }
 
@@ -159,18 +158,18 @@ static SEL sel_instance;
 ///
 - (void)instanceWithRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler {
     if ( request == nil ) return;
-    dispatch_group_notify(_group, dispatch_get_main_queue(), ^{
-        __auto_type _Nullable handler = self->_handlersM[request.requestPath];
-        if ( [(id)handler respondsToSelector:sel_instance] ) {
-            [handler instanceWithRequest:request completionHandler:completionHandler];
-        }
-        else {
+    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
+    __auto_type _Nullable handler = self->_handlersM[request.requestPath];
+    if ( [(id)handler respondsToSelector:sel_instance] ) {
+        [handler instanceWithRequest:request completionHandler:completionHandler];
+    }
+    else {
 #ifdef DEBUG
-            printf("\n(-_-) unable to get an instance: [%s]\n", request.description.UTF8String);
+        printf("\n(-_-) unable to get an instance: [%s]\n", request.description.UTF8String);
 #endif
-            if ( self->_unableToGetAnInstanceCallback ) self->_unableToGetAnInstanceCallback(request);
-        }
-    });
+        if ( self->_unableToGetAnInstanceCallback ) self->_unableToGetAnInstanceCallback(request, completionHandler);
+    }
+    dispatch_semaphore_signal(_lock);
 }
 
 ///
@@ -208,24 +207,24 @@ static SEL sel_instance;
 ///
 - (void)handleRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler {
     if ( request == nil ) return;
-    dispatch_group_notify(_group, dispatch_get_main_queue(), ^{
-        __auto_type _Nullable handler = self->_handlersM[request.requestPath];
-        if      ( [(id)handler respondsToSelector:sel_handler_v2] ) {
-            [handler handleRequest:request topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
-        }
+    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
+    __auto_type _Nullable handler = self->_handlersM[request.requestPath];
+    if      ( [(id)handler respondsToSelector:sel_handler_v2] ) {
+        [handler handleRequest:request topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
+    }
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        else if ( [(id)handler respondsToSelector:sel_handler_v1] ) {
-            [(id<SJRouteHandlerDeprecatedMethods>)handler handleRequestWithParameters:request.prts topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
-        }
+    else if ( [(id)handler respondsToSelector:sel_handler_v1] ) {
+        [(id<SJRouteHandlerDeprecatedMethods>)handler handleRequestWithParameters:request.prts topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
+    }
 #pragma clang diagnostic pop
-        else {
+    else {
 #ifdef DEBUG
-            printf("\n(-_-) Unhandled request: [%s]\n", request.description.UTF8String);
+        printf("\n(-_-) Unhandled request: [%s]\n", request.description.UTF8String);
 #endif
-            if ( self->_unhandledCallback ) self->_unhandledCallback(request, _sj_get_top_view_controller());
-        }
-    });
+        if ( self->_unhandledCallback ) self->_unhandledCallback(request, _sj_get_top_view_controller());
+    }
+    dispatch_semaphore_signal(_lock);
 }
 
 ///
@@ -233,11 +232,17 @@ static SEL sel_instance;
 ///
 - (BOOL)canHandleRoutePath:(NSString *)routePath {
     if ( 0 == routePath.length ) return NO;
-    return _handlersM[routePath] != nil;
+    
+    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
+    BOOL res = _handlersM[routePath] != nil;
+    dispatch_semaphore_signal(_lock);
+    return res;
 }
 
 ///
 /// 手动添加路由
+///
+///     注意: 为保证线程安全应该总是在`+addRoutesToRouter:`中调用该方法
 ///
 - (void)addRoute:(SJRouteObject *)object {
     if ( object != nil ) {
