@@ -219,7 +219,7 @@ static SEL sel_instance;
 #ifdef DEBUG
         printf("\n(-_-) Unhandled request: [%s]\n", request.description.UTF8String);
 #endif
-        if ( self->_unhandledCallback ) self->_unhandledCallback(request, _sj_get_top_view_controller());
+        if ( self->_unhandledCallback ) self->_unhandledCallback(request, _sj_get_top_view_controller(), completionHandler);
     }
 }
 

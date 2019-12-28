@@ -40,7 +40,7 @@
 
 - (void)_configRouter {
     /// router无法处理某个请求时的回调
-    SJRouter.shared.unhandledCallback = ^(SJRouteRequest * _Nonnull request, UIViewController * _Nonnull topViewController) {
+    SJRouter.shared.unhandledCallback = ^(SJRouteRequest * _Nonnull request, UIViewController * _Nonnull topViewController, SJCompletionHandler  _Nullable completionHandler) {
 #ifdef DEBUG
         NSLog(@"%d - %s", (int)__LINE__, __func__);
 #endif

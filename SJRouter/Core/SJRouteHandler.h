@@ -12,8 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^SJCompletionHandler)(id _Nullable result, NSError *_Nullable error);
-typedef void(^SJRouterUnhandledCallback)(SJRouteRequest *request, UIViewController *topViewController);
-typedef void(^SJRouterUnableToGetAnInstanceCallback)(SJRouteRequest *request, SJCompletionHandler _Nullable handler);
+typedef void(^SJRouterUnhandledCallback)(SJRouteRequest *request, UIViewController *topViewController, SJCompletionHandler _Nullable completionHandler);
+typedef void(^SJRouterUnableToGetAnInstanceCallback)(SJRouteRequest *request, SJCompletionHandler _Nullable completionHandler);
 
 @protocol SJRouteHandler
 @optional

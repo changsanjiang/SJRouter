@@ -22,7 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		76905DED3913E7D7B42EEB5F /* libPods-SJRouter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D825FAA5DB59D5F900860CF /* libPods-SJRouter_Example.a */; };
-		7738969623B33B7300A5E5DE /* Untitled 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7738969523B33B7300A5E5DE /* Untitled 2.png */; };
+		7738969623B33B7300A5E5DE /* request processing flow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7738969523B33B7300A5E5DE /* request processing flow.png */; };
 		7738969B23B343AF00A5E5DE /* SJRAPlaybackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7738969A23B343AF00A5E5DE /* SJRAPlaybackController.m */; };
 		775729212150D58200186126 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775729202150D58200186126 /* WebTestViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -61,7 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7738969523B33B7300A5E5DE /* Untitled 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled 2.png"; sourceTree = "<group>"; };
+		7738969523B33B7300A5E5DE /* request processing flow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request processing flow.png"; sourceTree = "<group>"; };
 		7738969923B343AF00A5E5DE /* SJRAPlaybackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJRAPlaybackController.h; sourceTree = "<group>"; };
 		7738969A23B343AF00A5E5DE /* SJRAPlaybackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJRAPlaybackController.m; sourceTree = "<group>"; };
 		7757291F2150D58200186126 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		6003F593195388D20070C39A /* Example for SJRouter */ = {
 			isa = PBXGroup;
 			children = (
-				7738969523B33B7300A5E5DE /* Untitled 2.png */,
+				7738969523B33B7300A5E5DE /* request processing flow.png */,
 				6003F59C195388D20070C39A /* SJAppDelegate.h */,
 				6003F59D195388D20070C39A /* SJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -287,7 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				7738969623B33B7300A5E5DE /* Untitled 2.png in Resources */,
+				7738969623B33B7300A5E5DE /* request processing flow.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
