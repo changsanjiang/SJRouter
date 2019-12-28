@@ -158,9 +158,8 @@ static SEL sel_instance;
 ///
 - (void)instanceWithRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler {
     if ( request == nil ) return;
-    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
-    __auto_type _Nullable handler = self->_handlersM[request.requestPath];
-    if ( [(id)handler respondsToSelector:sel_instance] ) {
+    id _Nullable handler = [self _handlerForRoutePath:request.requestPath];
+    if ( [handler respondsToSelector:sel_instance] ) {
         [handler instanceWithRequest:request completionHandler:completionHandler];
     }
     else {
@@ -169,7 +168,6 @@ static SEL sel_instance;
 #endif
         if ( self->_unableToGetAnInstanceCallback ) self->_unableToGetAnInstanceCallback(request, completionHandler);
     }
-    dispatch_semaphore_signal(_lock);
 }
 
 ///
@@ -207,14 +205,13 @@ static SEL sel_instance;
 ///
 - (void)handleRequest:(SJRouteRequest *)request completionHandler:(nullable SJCompletionHandler)completionHandler {
     if ( request == nil ) return;
-    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
-    __auto_type _Nullable handler = self->_handlersM[request.requestPath];
-    if      ( [(id)handler respondsToSelector:sel_handler_v2] ) {
+    id _Nullable handler = [self _handlerForRoutePath:request.requestPath];
+    if      ( [handler respondsToSelector:sel_handler_v2] ) {
         [handler handleRequest:request topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
     }
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    else if ( [(id)handler respondsToSelector:sel_handler_v1] ) {
+    else if ( [handler respondsToSelector:sel_handler_v1] ) {
         [(id<SJRouteHandlerDeprecatedMethods>)handler handleRequestWithParameters:request.prts topViewController:_sj_get_top_view_controller() completionHandler:completionHandler];
     }
 #pragma clang diagnostic pop
@@ -224,19 +221,13 @@ static SEL sel_instance;
 #endif
         if ( self->_unhandledCallback ) self->_unhandledCallback(request, _sj_get_top_view_controller());
     }
-    dispatch_semaphore_signal(_lock);
 }
 
 ///
 /// 是否可以处理某个路径
 ///
 - (BOOL)canHandleRoutePath:(NSString *)routePath {
-    if ( 0 == routePath.length ) return NO;
-    
-    dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
-    BOOL res = _handlersM[routePath] != nil;
-    dispatch_semaphore_signal(_lock);
-    return res;
+    return [self _handlerForRoutePath:routePath] != nil;
 }
 
 ///
@@ -250,6 +241,17 @@ static SEL sel_instance;
             _handlersM[path] = (id)object;
         }
     }
+}
+
+#pragma mark -
+- (nullable id)_handlerForRoutePath:(NSString *)path {
+    id handler = nil;
+    if ( path.length != 0 ) {
+        dispatch_semaphore_wait(_lock, DISPATCH_TIME_FOREVER);
+        handler = self->_handlersM[path];
+        dispatch_semaphore_signal(_lock);
+    }
+    return handler;
 }
 @end
 NS_ASSUME_NONNULL_END
