@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SJRouter'
-  s.version          = '0.0.17'
+  s.version          = '1.0.0'
   s.summary          = 'SJRouter.'
 
 # This description is used to generate tags and improve search results.

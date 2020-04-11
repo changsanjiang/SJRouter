@@ -3,9 +3,9 @@ PODS:
     - SJRouter
   - ModuleB (0.1.0):
     - SJRouter
-  - SJRouter (0.0.12):
-    - SJRouter/Core (= 0.0.12)
-  - SJRouter/Core (0.0.12)
+  - SJRouter (0.0.17):
+    - SJRouter/Core (= 0.0.17)
+  - SJRouter/Core (0.0.17)
 
 DEPENDENCIES:
   - ModuleA (from `../ModuleA`)
@@ -23,8 +23,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   ModuleA: 45d7ec62f61a891a7691b29228233da19fa4dd69
   ModuleB: 7d0e51b2b77dbcb06f8b6639b2c9d6c78ec7bc04
-  SJRouter: 702a0d06811fc2da02d6145bc7abb9f633fdc612
+  SJRouter: b822f45c4eed29cfa1d75100492ff227d481fb91
 
-PODFILE CHECKSUM: 594842781561fbe273ee1f61ee0ae87a0b23f4da
+PODFILE CHECKSUM: 6b3ad68d040e9d61356ad9b564002fae5ad3a150
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

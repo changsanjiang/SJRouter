@@ -1,6 +1,7 @@
+source 'https://cdn.cocoapods.org/'
 
 target 'SJRouter_Example' do
   pod 'SJRouter', :path => '../'
   pod 'ModuleA', :path => '../ModuleA'
-  pod 'ModuleB', :path => '../ModuleB'
+  pod 'ModuleB', :path => '../ModuleB' 
 end

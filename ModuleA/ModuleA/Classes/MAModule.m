@@ -12,24 +12,24 @@
 
 
 ///
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 ///
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 ///
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 ///
 @interface MAModule()<SJRouteHandler>
 
 @end
 
 @implementation MAModule
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 + (NSArray<NSString *> *)multiRoutePath {
     return @[@"MAModule/A1",
              @"MAModule/A2"];
 }
 
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 + (void)instanceWithRequest:(SJRouteRequest *)request completionHandler:(SJCompletionHandler)completionHandler {
     if ( [request.requestPath isEqualToString:@"MAModule/A1"] ) {
         MAViewController *vc = [[MAViewController alloc] init];
@@ -41,7 +41,7 @@
     }
 }
 
-/// 此模块为老版添加的方式, 新方式请查看 ModuleB
+/// 此模块为第一种添加方式, 第二种方式请查看 ModuleB
 + (void)handleRequest:(SJRouteRequest *)request topViewController:(UIViewController *)topViewController completionHandler:(SJCompletionHandler)completionHandler {
     [self instanceWithRequest:request completionHandler:^(id  _Nullable result, NSError * _Nullable error) {
         if ( error != nil ) {

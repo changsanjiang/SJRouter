@@ -1,6 +1,6 @@
 {
   "name": "SJRouter",
-  "version": "0.0.12",
+  "version": "0.0.17",
   "summary": "SJRouter.",
   "description": "ios router.",
   "homepage": "https://github.com/changsanjiang/SJRouter",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/changsanjiang/SJRouter.git",
-    "tag": "v0.0.12"
+    "tag": "v0.0.17"
   },
   "platforms": {
     "ios": "8.0"
